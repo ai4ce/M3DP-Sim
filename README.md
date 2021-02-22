@@ -109,3 +109,4 @@ sudo apt install build-essentials
         git clone https://github.com/ros-simulation/gazebo_ros_pkgs.git -b melodic-devel
         
 4. **Create a [Catkin Workspace](http://wiki.ros.org/catkin/Tutorials/create_a_workspace)**
+5. **Make sure you have [catkin_make](http://wiki.ros.org/catkin/commands/catkin_make)**
