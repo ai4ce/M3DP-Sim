@@ -109,4 +109,11 @@ sudo apt install build-essentials
         git clone https://github.com/ros-simulation/gazebo_ros_pkgs.git -b melodic-devel
         
 4. **Create a [Catkin Workspace](http://wiki.ros.org/catkin/Tutorials/create_a_workspace)**
-5. **Make sure you have [catkin_make](http://wiki.ros.org/catkin/commands/catkin_make)**
+5. **Download [catkin_make](http://wiki.ros.org/catkin/commands/catkin_make)**
+
+### Running TurtleBots
+
+1. **Create a [Catkin Workspace](http://wiki.ros.org/catkin/Tutorials/create_a_workspace)**
+2. `cd src`and **[Download turtlebot3](https://emanual.robotis.com/docs/en/platform/turtlebot3/quick-start/)**
+3.  **Download [ttbot with open-manipulator](Download ttbot with open-manipulator)** (change to melodic)
+
