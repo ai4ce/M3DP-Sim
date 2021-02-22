@@ -1,6 +1,6 @@
 # Gazebo3DPrintingSimulator
 
-To use this simulation tool (Tested on Ubuntu version 18.04 and 20.04) :
+To use this simulation tool (Tested on Ubuntu version 18.04 and 20.04) follow these instructions :
 
 ## Install the Required dependencies
 
@@ -69,7 +69,23 @@ sudo apt install build-essentials
   ```
   Sit DOlorem.
   
+  ## Fluid Engine Dev for meshing simulations
+  
+1. **Install fluid-engine_dev plugin**
 
-
+    1. Clone the [Fluid Engine Dev - Jet ](https://github.com/doyubkim/fluid-engine-dev) repo
+    2. Build it on your machine accordingly as you did with Gazebo `mkdir build && cd build && cmake .. && make`
+    
+2. **Locate the particles2obj executable**
+    
+    For me it was on `/home/<User_name>/fluid-engine-dev/build/bin/particles2obj`
+    1. How to Run the conversion for meshing in general
+        ```
+        code
+        ```
+    3. Run it in the command line during run time
+        ```
+        instructions
+        ```
 
 
