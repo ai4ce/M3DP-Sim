@@ -115,5 +115,5 @@ sudo apt install build-essentials
 
 1. **Create a [Catkin Workspace](http://wiki.ros.org/catkin/Tutorials/create_a_workspace)**
 2. `cd src`and **[Download turtlebot3](https://emanual.robotis.com/docs/en/platform/turtlebot3/quick-start/)**
-3.  **Download [ttbot with open-manipulator](Download ttbot with open-manipulator)** (change to melodic)
+3.  **Download [ttbot with open-manipulator](https://emanual.robotis.com/docs/en/platform/turtlebot3/manipulation/#manipulation)** (change to melodic)
 
