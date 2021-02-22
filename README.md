@@ -23,4 +23,9 @@ From [The Gazebo Installation Guide](http://gazebosim.org/tutorials?tut=install_
     GAZEBO_MAJOR_VERSION=version ROS_DISTRO=dummy . /tmp/dependencies.sh
     echo $BASE_DEPENDENCIES $GAZEBO_BASE_DEPENDENCIES | tr -d '\\' | xargs sudo apt-get -y install
     ```
+    
+   We recommend using ``ROS_DISTRO=meolodic`` and ``GAZEBO_MAJOR_VERSION=9``
+   
+   
 Refer to [The Gazebo Installation from Source](http://gazebosim.org/tutorials?tut=install_from_source&cat=install) for **optional** additional physics engines (not required for the basic functionalities of our tool)
+
