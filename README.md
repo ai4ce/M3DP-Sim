@@ -84,9 +84,9 @@ sudo apt install build-essentials
     
 2. **Clone our repo**
   ```
-  Lorem Ipsum
+  Lorem 
   ```
-  Sit DOlorem.
+ Ipsum
   
   ## Fluid Engine Dev for meshing simulations
   
@@ -99,17 +99,20 @@ sudo apt install build-essentials
     
     e.g `/home/<User_name>/fluid-engine-dev/build/bin/particles2obj`
     1. Run the conversion from cartesian coordinates to mesh to verify the installation
-        ```
+        ```javascript
         /particles2obj -i ./hybrid_liquid_sim_output/yuewei/frame_14000.xyz -r 700,700,700 -k 0.04 -m anisotropic -o ./hybrid_liquid_sim_output/frame_test
 
         ```
         The command above specifies the input path, output path for the **.obj** file and the resolution, meshing method, SPH kernel and grid spacing. 
         For more info on the scope of options, type --help in the end of the command. Refer to [Issue#303](https://github.com/doyubkim/fluid-engine-dev/issues/303) for more
          
-    2. Run it in the command line during run time
+    2. This tool uses a system call to connect the simulation results to the tools. In `FluidSimulator::RunStep` from file  _GazeboFluidSimulator.cpp_ the following is used:
+        ```cpp
+        string command = "'/home/uljad1b/fluid-engine-dev/build/bin/particles2obj' -i '" + path + "' -r 100,100,100 -g 0.01 -k 0.2 -m spherical -o '/home/uljad1b/fluid-engine-dev/build/bin/hybrid_liquid_sim_output/" + std::to_string(simulationSteps) + ".obj'";
+        system((command).c_str());
         ```
-        sxdfcgvbhjnkmhygtfrdghbjn
-        ```
+        Through `string command` you can specify the path where your mesh will be saved during runtime. Use absolute path! 
+        
   ## ROS to connect the plugin for multi robot simulations
   
   1. **Desktop Full Install ROS**
