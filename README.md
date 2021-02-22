@@ -4,7 +4,19 @@ To use this simulation tool (Tested on Ubuntu version 18.04 and 20.04) follow th
 
 ### Table of Contents
 
-[ok]()
+[Required Dependencies](https://github.com/ai4ce/Gazebo3DPrintingSimulator#install-the-required-dependencies)
+
+[Build Essentials](https://github.com/ai4ce/Gazebo3DPrintingSimulator#install-build-essentials)
+
+[Install Gazebo](https://github.com/ai4ce/Gazebo3DPrintingSimulator#install-gazebo)
+
+[Install the Material Simulation Plugin for Gazebo](https://github.com/ai4ce/Gazebo3DPrintingSimulator#install-gazebo-fluid-simulation-plugin-with-splishsplash)
+
+[Meshing Tool] (https://github.com/ai4ce/Gazebo3DPrintingSimulator#fluid-engine-dev-for-meshing-simulations)
+
+[Connect to ROS] (https://github.com/ai4ce/Gazebo3DPrintingSimulator#ros-to-connect-the-plugin-for-multi-robot-simulations)
+
+        [Running the Robots](https://github.com/ai4ce/Gazebo3DPrintingSimulator#running-turtlebots)
 
 -----------
 ## Install the Required dependencies
@@ -47,6 +59,8 @@ sudo apt install build-essentials
   ```
   git clone https://bitbucket.org/hbpneurorobotics/gazebo.git
   ```
+  Note that more recent version of Gazebo may not be fully compatible, which is why we are providing this version
+  
 2. **Install using the following commands**
   ```
   cd gazebo
