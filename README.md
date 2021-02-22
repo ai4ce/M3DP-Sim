@@ -53,6 +53,21 @@ sudo apt install build-essentials
   ```
   You can use `make -j4` or another lower number than 8 based on the available memory
   
+  ## Install Gazebo Fluid Simulation Plugin with SPlisHSPlasH
+  
+1. **open your bash** `nano ~/.bashrc`
+
+    1. Add a line to the bottom of the file 
+        ```
+        export LD_LIBRARY_PATH=/home/jason2/.local/lib:$LD_LIBRARY_PATH:/home/<your_User_Name>/splisplash/build/lib
+        ```
+    2. save changes and exit before runnig: `source ~/.bashrc`
+    
+2. **Clone our repo**
+  ```
+  Lorem Ipsum
+  ```
+  Sit DOlorem
   
 
 
