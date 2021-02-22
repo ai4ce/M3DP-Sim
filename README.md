@@ -98,9 +98,10 @@ sudo apt install build-essentials
 2. **Locate the particles2obj executable**
     
     e.g `/home/<User_name>/fluid-engine-dev/build/bin/particles2obj`
-    1. How to Run the conversion for meshing in general
+    1. Run the conversion from cartesian coordinates to mesh to verify the installation
         ```
-        code
+        /particles2obj -i ./hybrid_liquid_sim_output/yuewei/frame_14000.xyz -r 700,700,700 -k 0.04 -m anisotropic -o ./hybrid_liquid_sim_output/frame_test
+
         ```
     2. Run it in the command line during run time
         ```
