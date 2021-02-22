@@ -96,10 +96,10 @@ sudo apt install build-essentials
     
 2. **Connect ROS to Gazebo**
     
-    1. How to Run the conversion for meshing in general
+    1. Install [gazebo_ros_pkgs](http://gazebosim.org/tutorials?tut=ros_installing&cat=connect_ros#Installgazebo_ros_pkgs)
         ```
-        code
+        git clone https://github.com/ros-simulation/gazebo_ros_pkgs.git -b melodic-devel
         ```
-
+    2. Rosdep `rosdep check --from-paths . --ignore-src --rosdistro melodic` to check for missing pckgs (dont install gazebo9 & libgazebo9-dev)
   
 
