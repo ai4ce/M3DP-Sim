@@ -104,4 +104,8 @@ sudo apt install build-essentials
         ```
         rosdep check --from-paths . --ignore-src --rosdistro melodic
         ```
+3. **Install moveit**
 
+        git clone https://github.com/ros-simulation/gazebo_ros_pkgs.git -b melodic-devel
+        
+4. **Create a [Catkin Workspace](http://wiki.ros.org/catkin/Tutorials/create_a_workspace)**
