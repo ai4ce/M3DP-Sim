@@ -67,7 +67,7 @@ sudo apt install build-essentials
   ```
   Lorem Ipsum
   ```
-  Sit DOlorem
+  Sit DOlorem.
   
 
 
