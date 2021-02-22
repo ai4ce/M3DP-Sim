@@ -100,6 +100,8 @@ sudo apt install build-essentials
         ```
         git clone https://github.com/ros-simulation/gazebo_ros_pkgs.git -b melodic-devel
         ```
-    2. Rosdep `rosdep check --from-paths . --ignore-src --rosdistro melodic` to check for missing pckgs (dont install gazebo9 & libgazebo9-dev)
-  
+    2. Use Rosdep to check for missing pckgs (dont install gazebo9 & libgazebo9-dev)
+        ```
+        rosdep check --from-paths . --ignore-src --rosdistro melodic
+        ```
 
