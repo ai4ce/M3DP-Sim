@@ -38,7 +38,7 @@ sudo apt install build-essentials
 
 ## Install Gazebo 
     
-1. **clone the repository **
+1. **clone the repository**
   ```
   git clone https://bitbucket.org/hbpneurorobotics/gazebo.git
   ```
