@@ -103,9 +103,12 @@ sudo apt install build-essentials
         /particles2obj -i ./hybrid_liquid_sim_output/yuewei/frame_14000.xyz -r 700,700,700 -k 0.04 -m anisotropic -o ./hybrid_liquid_sim_output/frame_test
 
         ```
+        The command above specifies the input path, output path for the **.obj** file and the resolution, meshing method, SPH kernel and grid spacing. 
+        For more info on the scope of options, type --help in the end of the command. Refer to [Issue#303](https://github.com/doyubkim/fluid-engine-dev/issues/303) for more
+         
     2. Run it in the command line during run time
         ```
-        instructions
+        sxdfcgvbhjnkmhygtfrdghbjn
         ```
   ## ROS to connect the plugin for multi robot simulations
   
