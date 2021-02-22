@@ -87,5 +87,19 @@ sudo apt install build-essentials
         ```
         instructions
         ```
+  ## ROS to connect the plugin for multi robot simulations
+  
+  1. **Desktop Full Install ROS**
+        
+        1. Follow the [ROS Installation Instructions](http://wiki.ros.org/melodic/Installation/Ubuntu). 
+        At **1.4** choose **Desktop-Full Install**
+    
+2. **Connect ROS to Gazebo**
+    
+    1. How to Run the conversion for meshing in general
+        ```
+        code
+        ```
 
+  
 
