@@ -78,12 +78,12 @@ sudo apt install build-essentials
     
 2. **Locate the particles2obj executable**
     
-    For me it was on `/home/<User_name>/fluid-engine-dev/build/bin/particles2obj`
+    e.g `/home/<User_name>/fluid-engine-dev/build/bin/particles2obj`
     1. How to Run the conversion for meshing in general
         ```
         code
         ```
-    3. Run it in the command line during run time
+    2. Run it in the command line during run time
         ```
         instructions
         ```
