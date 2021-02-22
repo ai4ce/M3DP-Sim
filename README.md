@@ -11,7 +11,7 @@ From [The Gazebo Installation Guide](http://gazebosim.org/tutorials?tut=install_
     sudo sh -c 'echo "deb http://packages.osrfoundation.org/gazebo/ubuntu-stable `lsb_release -cs` main" > /etc/apt/sources.list.d/gazebo-stable.list'
     ```
 
-2. **Setup keys and Update: **   
+2. **Setup keys and Update:**   
 
     ```
     wget https://packages.osrfoundation.org/gazebo.key -O - | sudo apt-key add -
