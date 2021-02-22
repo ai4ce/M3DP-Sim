@@ -16,7 +16,7 @@ To use this simulation tool (Tested on Ubuntu version 18.04 and 20.04) follow th
 
 * [Connect to ROS](https://github.com/ai4ce/Gazebo3DPrintingSimulator#ros-to-connect-the-plugin-for-multi-robot-simulations)
 
-        - [Running the Robots](https://github.com/ai4ce/Gazebo3DPrintingSimulator#running-turtlebots)
+  - [Control the Robots](https://github.com/ai4ce/Gazebo3DPrintingSimulator#running-turtlebots)
 
 -----------
 ## Install the Required dependencies
