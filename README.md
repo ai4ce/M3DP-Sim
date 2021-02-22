@@ -1,5 +1,4 @@
 # Gazebo3DPrintingSimulator
-==============================
 
 To use this simulation tool (Tested on Ubuntu version 18.04 and 20.04) :
 
@@ -29,6 +28,33 @@ From [The Gazebo Installation Guide](http://gazebosim.org/tutorials?tut=install_
    
    
 Refer to [The Gazebo Installation from Source](http://gazebosim.org/tutorials?tut=install_from_source&cat=install) for **optional** additional physics engines (not required for the basic functionalities of our tool)
+
+## Install build essentials
+
+```
+sudo apt update
+sudo apt install build-essentials 
+```
+
+## Install Gazebo 
+    
+1. **clone the repository **
+  ```
+  git clone https://bitbucket.org/hbpneurorobotics/gazebo.git
+  ```
+2. **Install using the following commands**
+  ```
+  cd gazebo
+  mkdir build
+  cd build
+  cmake -DCMAKE_INSTALL_PREFIX=$HOME/.local ..
+  make -j8
+  make install
+  ```
+  You can use `make -j4` or another lower number than 8 based on the available memory
+  
+  
+
 
 
 
