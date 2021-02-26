@@ -1,0 +1,1 @@
+cmd='/opt/clion-2020.2.4/bin/cmake/linux/bin/cmake;-DCMAKE_POSITION_INDEPENDENT_CODE:BOOL=ON;-DCMAKE_BUILD_TYPE=Debug;-DCMAKE_INSTALL_PREFIX:PATH=/home/jason/splisplash/cmake-build-debug/extern/install/GenericParameters;-DGENERICPARAMETERS_NO_TESTS:BOOL=1;-GCodeBlocks - Unix Makefiles;<SOURCE_DIR><SOURCE_SUBDIR>'

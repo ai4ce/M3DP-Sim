@@ -1,0 +1,3 @@
+repository='https://github.com/InteractiveComputerGraphics/CompactNSearch.git'
+module=''
+tag='origin'

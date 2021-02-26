@@ -1,0 +1,14 @@
+<?xml version='1.0'?>
+<sdf version ='1.6'>
+  <model name="my_mesh">
+      <static>true</static>
+      <link name="body">
+      <pose>0 0 0 1.57 0 0</pose>
+        <visual name="visual">
+          <geometry>
+            <mesh><uri>frame_000002.obj</uri></mesh>
+          </geometry>
+        </visual>
+      </link>
+    </model>
+</sdf>

@@ -1,0 +1,2437 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="SPlishSPlasH"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\CMake\;CMake Files\..\;CMake Files\..\.local\;CMake Files\..\.local\lib\;CMake Files\..\.local\lib\cmake\;CMake Files\..\.local\lib\cmake\gazebo\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\usr\;CMake Files\..\..\..\usr\lib\;CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\;CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\;CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\simbody\;CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\sdformat\;CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\ignition-math4\;CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\ignition-cmake0\;CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\ignition-cmake0\cmake0\;CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\ignition-transport4\;CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\ignition-msgs1\;CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\ignition-common1\;CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\ignition-fuel_tools1\;CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\jsoncpp\;CMake Files\..\..\..\usr\share\;CMake Files\..\..\..\usr\share\OGRE\;CMake Files\..\..\..\usr\share\OGRE\cmake\;CMake Files\..\..\..\usr\share\OGRE\cmake\modules\;CMake Files\cmake-build-debug\;CMake Files\cmake-build-debug\extern\;CMake Files\cmake-build-debug\extern\CompactNSearch\;CMake Files\cmake-build-debug\extern\CompactNSearch\tmp\;CMake Files\cmake-build-debug\extern\Discregrid\;CMake Files\cmake-build-debug\extern\Discregrid\tmp\;CMake Files\cmake-build-debug\extern\GenericParameters\;CMake Files\cmake-build-debug\extern\GenericParameters\tmp\;CMake Files\cmake-build-debug\extern\PositionBasedDynamics\;CMake Files\cmake-build-debug\extern\PositionBasedDynamics\tmp\;CMake Files\extern\;CMake Files\extern\zlib\;CMake Files\extern\partio\;CMake Files\extern\partio\src\;CMake Files\extern\partio\src\lib\;CMake Files\extern\md5\;CMake Files\extern\tinyexpr\;CMake Files\extern\AntTweakBar\;CMake Files\extern\glew\;CMake Files\SPlisHSPlasH\;CMake Files\Utilities\;CMake Files\Tools\;CMake Files\Tools\PartioViewer\;CMake Files\Tools\SurfaceSampling\;CMake Files\Tools\VolumeSampling\;CMake Files\Tools\partio2vtk\;CMake Files\GUI\;CMake Files\GUI\OpenGL\;CMake Files\GUI\TweakBar\;CMake Files\Simulator\;CMake Files\Simulator\GazeboWrapper\;CMake Files\Tests\;CMake Files\Tests\Kernel\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/jason/splisplash/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install/local">
+				<Option working_dir="/home/jason/splisplash/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/local"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Ext_PBD">
+				<Option working_dir="/home/jason/splisplash/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/Makefile&quot;  VERBOSE=1 Ext_PBD"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Ext_GenericParameters">
+				<Option working_dir="/home/jason/splisplash/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/Makefile&quot;  VERBOSE=1 Ext_GenericParameters"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Ext_NeighborhoodSearch">
+				<Option working_dir="/home/jason/splisplash/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/Makefile&quot;  VERBOSE=1 Ext_NeighborhoodSearch"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Ext_Discregrid">
+				<Option working_dir="/home/jason/splisplash/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/Makefile&quot;  VERBOSE=1 Ext_Discregrid"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/jason/splisplash/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install">
+				<Option working_dir="/home/jason/splisplash/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/Makefile&quot;  VERBOSE=1 install"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="CopySPlisHSPlasHShaders">
+				<Option working_dir="/home/jason/splisplash/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/Makefile&quot;  VERBOSE=1 CopySPlisHSPlasHShaders"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="CopyPBDShaders">
+				<Option working_dir="/home/jason/splisplash/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/Makefile&quot;  VERBOSE=1 CopyPBDShaders"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/jason/splisplash/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install/strip">
+				<Option working_dir="/home/jason/splisplash/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/strip"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="list_install_components">
+				<Option working_dir="/home/jason/splisplash/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/Makefile&quot;  VERBOSE=1 list_install_components"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="zlib">
+				<Option output="/home/jason/splisplash/cmake-build-debug/lib/libzlib_d.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jason/splisplash/cmake-build-debug/extern/zlib"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/jason/splisplash/extern/zlib/src"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/extern/zlib/Makefile&quot;  VERBOSE=1 zlib"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/extern/zlib/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/extern/zlib/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/extern/zlib/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="zlib/fast">
+				<Option output="/home/jason/splisplash/cmake-build-debug/lib/libzlib_d.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jason/splisplash/cmake-build-debug/extern/zlib"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/jason/splisplash/extern/zlib/src"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/extern/zlib/Makefile&quot;  VERBOSE=1 zlib/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/extern/zlib/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/extern/zlib/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/extern/zlib/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="partio">
+				<Option output="/home/jason/splisplash/cmake-build-debug/lib/libpartio_d.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jason/splisplash/cmake-build-debug/extern/partio/src/lib"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DPARTIO_USE_ZLIB"/>
+					<Add directory="/home/jason/splisplash/extern/partio/../zlib/src"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/extern/partio/src/lib/Makefile&quot;  VERBOSE=1 partio"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/extern/partio/src/lib/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/extern/partio/src/lib/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/extern/partio/src/lib/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="partio/fast">
+				<Option output="/home/jason/splisplash/cmake-build-debug/lib/libpartio_d.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jason/splisplash/cmake-build-debug/extern/partio/src/lib"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DPARTIO_USE_ZLIB"/>
+					<Add directory="/home/jason/splisplash/extern/partio/../zlib/src"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/extern/partio/src/lib/Makefile&quot;  VERBOSE=1 partio/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/extern/partio/src/lib/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/extern/partio/src/lib/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/extern/partio/src/lib/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="MD5">
+				<Option output="/home/jason/splisplash/cmake-build-debug/lib/libMD5_d.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jason/splisplash/cmake-build-debug/extern/md5"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/extern/md5/Makefile&quot;  VERBOSE=1 MD5"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/extern/md5/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/extern/md5/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/extern/md5/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="MD5/fast">
+				<Option output="/home/jason/splisplash/cmake-build-debug/lib/libMD5_d.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jason/splisplash/cmake-build-debug/extern/md5"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/extern/md5/Makefile&quot;  VERBOSE=1 MD5/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/extern/md5/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/extern/md5/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/extern/md5/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tinyexpr">
+				<Option output="/home/jason/splisplash/cmake-build-debug/lib/libtinyexpr_d.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jason/splisplash/cmake-build-debug/extern/tinyexpr"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/extern/tinyexpr/Makefile&quot;  VERBOSE=1 tinyexpr"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/extern/tinyexpr/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/extern/tinyexpr/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/extern/tinyexpr/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tinyexpr/fast">
+				<Option output="/home/jason/splisplash/cmake-build-debug/lib/libtinyexpr_d.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jason/splisplash/cmake-build-debug/extern/tinyexpr"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/extern/tinyexpr/Makefile&quot;  VERBOSE=1 tinyexpr/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/extern/tinyexpr/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/extern/tinyexpr/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/extern/tinyexpr/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="AntTweakBar">
+				<Option output="/home/jason/splisplash/cmake-build-debug/lib/libAntTweakBar_d.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jason/splisplash/cmake-build-debug/extern/AntTweakBar"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DTW_EXPORTS"/>
+					<Add option="-DTW_STATIC"/>
+					<Add option="-D_UNIX"/>
+					<Add option="-D__PLACEMENT_NEW_INLINE"/>
+					<Add directory="/home/jason/splisplash/extern/AntTweakBar/include"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/extern/AntTweakBar/Makefile&quot;  VERBOSE=1 AntTweakBar"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/extern/AntTweakBar/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/extern/AntTweakBar/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/extern/AntTweakBar/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="AntTweakBar/fast">
+				<Option output="/home/jason/splisplash/cmake-build-debug/lib/libAntTweakBar_d.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jason/splisplash/cmake-build-debug/extern/AntTweakBar"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DTW_EXPORTS"/>
+					<Add option="-DTW_STATIC"/>
+					<Add option="-D_UNIX"/>
+					<Add option="-D__PLACEMENT_NEW_INLINE"/>
+					<Add directory="/home/jason/splisplash/extern/AntTweakBar/include"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/extern/AntTweakBar/Makefile&quot;  VERBOSE=1 AntTweakBar/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/extern/AntTweakBar/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/extern/AntTweakBar/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/extern/AntTweakBar/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="glew">
+				<Option output="/home/jason/splisplash/cmake-build-debug/lib/libglew_d.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jason/splisplash/cmake-build-debug/extern/glew"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DGLEW_NO_GLU"/>
+					<Add option="-DGLEW_BUILD"/>
+					<Add directory="/home/jason/splisplash/extern/glew/include"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/extern/glew/Makefile&quot;  VERBOSE=1 glew"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/extern/glew/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/extern/glew/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/extern/glew/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="glew/fast">
+				<Option output="/home/jason/splisplash/cmake-build-debug/lib/libglew_d.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jason/splisplash/cmake-build-debug/extern/glew"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DGLEW_NO_GLU"/>
+					<Add option="-DGLEW_BUILD"/>
+					<Add directory="/home/jason/splisplash/extern/glew/include"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/extern/glew/Makefile&quot;  VERBOSE=1 glew/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/extern/glew/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/extern/glew/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/extern/glew/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="SPlisHSPlasH">
+				<Option output="/home/jason/splisplash/cmake-build-debug/lib/libSPlisHSPlasH_d.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jason/splisplash/cmake-build-debug/SPlisHSPlasH"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DLIBBULLET_VERSION=2.87"/>
+					<Add option="-DLIBBULLET_VERSION_GT_282"/>
+					<Add directory="/home/jason/.local/include"/>
+					<Add directory="/home/jason/.local/include/gazebo-9"/>
+					<Add directory="/usr/include/bullet"/>
+					<Add directory="/usr/include/simbody"/>
+					<Add directory="/usr/include/sdformat-6.2"/>
+					<Add directory="/usr/include/ignition/math4"/>
+					<Add directory="/usr/include/OGRE"/>
+					<Add directory="/usr/include/OGRE/Terrain"/>
+					<Add directory="/usr/include/OGRE/Paging"/>
+					<Add directory="/usr/include/ignition/transport4"/>
+					<Add directory="/usr/include/ignition/msgs1"/>
+					<Add directory="/usr/include/ignition/common1"/>
+					<Add directory="/usr/include/ignition/fuel_tools1"/>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/home/jason/splisplash/cmake-build-debug/extern/install/NeighborhoodSearch/include"/>
+					<Add directory="/home/jason/splisplash/cmake-build-debug/extern/install/GenericParameters/include"/>
+					<Add directory="/home/jason/splisplash/cmake-build-debug/extern/install/Discregrid/include"/>
+					<Add directory="/home/jason/splisplash"/>
+					<Add directory="/home/jason/splisplash/extern/zlib/src"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/SPlisHSPlasH/Makefile&quot;  VERBOSE=1 SPlisHSPlasH"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/SPlisHSPlasH/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/SPlisHSPlasH/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/SPlisHSPlasH/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="SPlisHSPlasH/fast">
+				<Option output="/home/jason/splisplash/cmake-build-debug/lib/libSPlisHSPlasH_d.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jason/splisplash/cmake-build-debug/SPlisHSPlasH"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DLIBBULLET_VERSION=2.87"/>
+					<Add option="-DLIBBULLET_VERSION_GT_282"/>
+					<Add directory="/home/jason/.local/include"/>
+					<Add directory="/home/jason/.local/include/gazebo-9"/>
+					<Add directory="/usr/include/bullet"/>
+					<Add directory="/usr/include/simbody"/>
+					<Add directory="/usr/include/sdformat-6.2"/>
+					<Add directory="/usr/include/ignition/math4"/>
+					<Add directory="/usr/include/OGRE"/>
+					<Add directory="/usr/include/OGRE/Terrain"/>
+					<Add directory="/usr/include/OGRE/Paging"/>
+					<Add directory="/usr/include/ignition/transport4"/>
+					<Add directory="/usr/include/ignition/msgs1"/>
+					<Add directory="/usr/include/ignition/common1"/>
+					<Add directory="/usr/include/ignition/fuel_tools1"/>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/home/jason/splisplash/cmake-build-debug/extern/install/NeighborhoodSearch/include"/>
+					<Add directory="/home/jason/splisplash/cmake-build-debug/extern/install/GenericParameters/include"/>
+					<Add directory="/home/jason/splisplash/cmake-build-debug/extern/install/Discregrid/include"/>
+					<Add directory="/home/jason/splisplash"/>
+					<Add directory="/home/jason/splisplash/extern/zlib/src"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/SPlisHSPlasH/Makefile&quot;  VERBOSE=1 SPlisHSPlasH/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/SPlisHSPlasH/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/SPlisHSPlasH/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/SPlisHSPlasH/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Utilities">
+				<Option output="/home/jason/splisplash/cmake-build-debug/lib/libUtilities_d.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jason/splisplash/cmake-build-debug/Utilities"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DLIBBULLET_VERSION=2.87"/>
+					<Add option="-DLIBBULLET_VERSION_GT_282"/>
+					<Add directory="/home/jason/.local/include"/>
+					<Add directory="/home/jason/.local/include/gazebo-9"/>
+					<Add directory="/usr/include/bullet"/>
+					<Add directory="/usr/include/simbody"/>
+					<Add directory="/usr/include/sdformat-6.2"/>
+					<Add directory="/usr/include/ignition/math4"/>
+					<Add directory="/usr/include/OGRE"/>
+					<Add directory="/usr/include/OGRE/Terrain"/>
+					<Add directory="/usr/include/OGRE/Paging"/>
+					<Add directory="/usr/include/ignition/transport4"/>
+					<Add directory="/usr/include/ignition/msgs1"/>
+					<Add directory="/usr/include/ignition/common1"/>
+					<Add directory="/usr/include/ignition/fuel_tools1"/>
+					<Add directory="/home/jason/splisplash"/>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/Utilities/Makefile&quot;  VERBOSE=1 Utilities"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/Utilities/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/Utilities/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/Utilities/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Utilities/fast">
+				<Option output="/home/jason/splisplash/cmake-build-debug/lib/libUtilities_d.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jason/splisplash/cmake-build-debug/Utilities"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DLIBBULLET_VERSION=2.87"/>
+					<Add option="-DLIBBULLET_VERSION_GT_282"/>
+					<Add directory="/home/jason/.local/include"/>
+					<Add directory="/home/jason/.local/include/gazebo-9"/>
+					<Add directory="/usr/include/bullet"/>
+					<Add directory="/usr/include/simbody"/>
+					<Add directory="/usr/include/sdformat-6.2"/>
+					<Add directory="/usr/include/ignition/math4"/>
+					<Add directory="/usr/include/OGRE"/>
+					<Add directory="/usr/include/OGRE/Terrain"/>
+					<Add directory="/usr/include/OGRE/Paging"/>
+					<Add directory="/usr/include/ignition/transport4"/>
+					<Add directory="/usr/include/ignition/msgs1"/>
+					<Add directory="/usr/include/ignition/common1"/>
+					<Add directory="/usr/include/ignition/fuel_tools1"/>
+					<Add directory="/home/jason/splisplash"/>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/Utilities/Makefile&quot;  VERBOSE=1 Utilities/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/Utilities/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/Utilities/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/Utilities/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="PartioViewer">
+				<Option output="/home/jason/splisplash/bin/PartioViewer_d" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jason/splisplash/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DTW_NO_LIB_PRAGMA"/>
+					<Add option="-DTW_STATIC"/>
+					<Add option="-DSPH_DATA_PATH=&quot;../data&quot;"/>
+					<Add option="-DLIBBULLET_VERSION=2.87"/>
+					<Add option="-DLIBBULLET_VERSION_GT_282"/>
+					<Add directory="/home/jason/.local/include"/>
+					<Add directory="/home/jason/.local/include/gazebo-9"/>
+					<Add directory="/usr/include/bullet"/>
+					<Add directory="/usr/include/simbody"/>
+					<Add directory="/usr/include/sdformat-6.2"/>
+					<Add directory="/usr/include/ignition/math4"/>
+					<Add directory="/usr/include/OGRE"/>
+					<Add directory="/usr/include/OGRE/Terrain"/>
+					<Add directory="/usr/include/OGRE/Paging"/>
+					<Add directory="/usr/include/ignition/transport4"/>
+					<Add directory="/usr/include/ignition/msgs1"/>
+					<Add directory="/usr/include/ignition/common1"/>
+					<Add directory="/usr/include/ignition/fuel_tools1"/>
+					<Add directory="/home/jason/splisplash/extern/glew/include"/>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/home/jason/splisplash/cmake-build-debug/extern/install/NeighborhoodSearch/include"/>
+					<Add directory="/home/jason/splisplash/cmake-build-debug/extern/install/GenericParameters/include"/>
+					<Add directory="/home/jason/splisplash/cmake-build-debug/extern/install/Discregrid/include"/>
+					<Add directory="/home/jason/splisplash"/>
+					<Add directory="/home/jason/splisplash/extern/zlib/src"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/Tools/PartioViewer/Makefile&quot;  VERBOSE=1 PartioViewer"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/Tools/PartioViewer/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/Tools/PartioViewer/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/Tools/PartioViewer/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="PartioViewer/fast">
+				<Option output="/home/jason/splisplash/bin/PartioViewer_d" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jason/splisplash/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DTW_NO_LIB_PRAGMA"/>
+					<Add option="-DTW_STATIC"/>
+					<Add option="-DSPH_DATA_PATH=&quot;../data&quot;"/>
+					<Add option="-DLIBBULLET_VERSION=2.87"/>
+					<Add option="-DLIBBULLET_VERSION_GT_282"/>
+					<Add directory="/home/jason/.local/include"/>
+					<Add directory="/home/jason/.local/include/gazebo-9"/>
+					<Add directory="/usr/include/bullet"/>
+					<Add directory="/usr/include/simbody"/>
+					<Add directory="/usr/include/sdformat-6.2"/>
+					<Add directory="/usr/include/ignition/math4"/>
+					<Add directory="/usr/include/OGRE"/>
+					<Add directory="/usr/include/OGRE/Terrain"/>
+					<Add directory="/usr/include/OGRE/Paging"/>
+					<Add directory="/usr/include/ignition/transport4"/>
+					<Add directory="/usr/include/ignition/msgs1"/>
+					<Add directory="/usr/include/ignition/common1"/>
+					<Add directory="/usr/include/ignition/fuel_tools1"/>
+					<Add directory="/home/jason/splisplash/extern/glew/include"/>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/home/jason/splisplash/cmake-build-debug/extern/install/NeighborhoodSearch/include"/>
+					<Add directory="/home/jason/splisplash/cmake-build-debug/extern/install/GenericParameters/include"/>
+					<Add directory="/home/jason/splisplash/cmake-build-debug/extern/install/Discregrid/include"/>
+					<Add directory="/home/jason/splisplash"/>
+					<Add directory="/home/jason/splisplash/extern/zlib/src"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/Tools/PartioViewer/Makefile&quot;  VERBOSE=1 PartioViewer/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/Tools/PartioViewer/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/Tools/PartioViewer/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/Tools/PartioViewer/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="SurfaceSampling">
+				<Option output="/home/jason/splisplash/bin/SurfaceSampling_d" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jason/splisplash/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DLIBBULLET_VERSION=2.87"/>
+					<Add option="-DLIBBULLET_VERSION_GT_282"/>
+					<Add directory="/home/jason/.local/include"/>
+					<Add directory="/home/jason/.local/include/gazebo-9"/>
+					<Add directory="/usr/include/bullet"/>
+					<Add directory="/usr/include/simbody"/>
+					<Add directory="/usr/include/sdformat-6.2"/>
+					<Add directory="/usr/include/ignition/math4"/>
+					<Add directory="/usr/include/OGRE"/>
+					<Add directory="/usr/include/OGRE/Terrain"/>
+					<Add directory="/usr/include/OGRE/Paging"/>
+					<Add directory="/usr/include/ignition/transport4"/>
+					<Add directory="/usr/include/ignition/msgs1"/>
+					<Add directory="/usr/include/ignition/common1"/>
+					<Add directory="/usr/include/ignition/fuel_tools1"/>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/home/jason/splisplash/cmake-build-debug/extern/install/NeighborhoodSearch/include"/>
+					<Add directory="/home/jason/splisplash/cmake-build-debug/extern/install/GenericParameters/include"/>
+					<Add directory="/home/jason/splisplash/cmake-build-debug/extern/install/Discregrid/include"/>
+					<Add directory="/home/jason/splisplash"/>
+					<Add directory="/home/jason/splisplash/extern/zlib/src"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/Tools/SurfaceSampling/Makefile&quot;  VERBOSE=1 SurfaceSampling"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/Tools/SurfaceSampling/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/Tools/SurfaceSampling/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/Tools/SurfaceSampling/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="SurfaceSampling/fast">
+				<Option output="/home/jason/splisplash/bin/SurfaceSampling_d" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jason/splisplash/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DLIBBULLET_VERSION=2.87"/>
+					<Add option="-DLIBBULLET_VERSION_GT_282"/>
+					<Add directory="/home/jason/.local/include"/>
+					<Add directory="/home/jason/.local/include/gazebo-9"/>
+					<Add directory="/usr/include/bullet"/>
+					<Add directory="/usr/include/simbody"/>
+					<Add directory="/usr/include/sdformat-6.2"/>
+					<Add directory="/usr/include/ignition/math4"/>
+					<Add directory="/usr/include/OGRE"/>
+					<Add directory="/usr/include/OGRE/Terrain"/>
+					<Add directory="/usr/include/OGRE/Paging"/>
+					<Add directory="/usr/include/ignition/transport4"/>
+					<Add directory="/usr/include/ignition/msgs1"/>
+					<Add directory="/usr/include/ignition/common1"/>
+					<Add directory="/usr/include/ignition/fuel_tools1"/>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/home/jason/splisplash/cmake-build-debug/extern/install/NeighborhoodSearch/include"/>
+					<Add directory="/home/jason/splisplash/cmake-build-debug/extern/install/GenericParameters/include"/>
+					<Add directory="/home/jason/splisplash/cmake-build-debug/extern/install/Discregrid/include"/>
+					<Add directory="/home/jason/splisplash"/>
+					<Add directory="/home/jason/splisplash/extern/zlib/src"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/Tools/SurfaceSampling/Makefile&quot;  VERBOSE=1 SurfaceSampling/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/Tools/SurfaceSampling/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/Tools/SurfaceSampling/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/Tools/SurfaceSampling/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="VolumeSampling">
+				<Option output="/home/jason/splisplash/bin/VolumeSampling_d" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jason/splisplash/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DLIBBULLET_VERSION=2.87"/>
+					<Add option="-DLIBBULLET_VERSION_GT_282"/>
+					<Add directory="/home/jason/.local/include"/>
+					<Add directory="/home/jason/.local/include/gazebo-9"/>
+					<Add directory="/usr/include/bullet"/>
+					<Add directory="/usr/include/simbody"/>
+					<Add directory="/usr/include/sdformat-6.2"/>
+					<Add directory="/usr/include/ignition/math4"/>
+					<Add directory="/usr/include/OGRE"/>
+					<Add directory="/usr/include/OGRE/Terrain"/>
+					<Add directory="/usr/include/OGRE/Paging"/>
+					<Add directory="/usr/include/ignition/transport4"/>
+					<Add directory="/usr/include/ignition/msgs1"/>
+					<Add directory="/usr/include/ignition/common1"/>
+					<Add directory="/usr/include/ignition/fuel_tools1"/>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/home/jason/splisplash/cmake-build-debug/extern/install/NeighborhoodSearch/include"/>
+					<Add directory="/home/jason/splisplash/cmake-build-debug/extern/install/GenericParameters/include"/>
+					<Add directory="/home/jason/splisplash/cmake-build-debug/extern/install/Discregrid/include"/>
+					<Add directory="/home/jason/splisplash"/>
+					<Add directory="/home/jason/splisplash/extern/zlib/src"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/Tools/VolumeSampling/Makefile&quot;  VERBOSE=1 VolumeSampling"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/Tools/VolumeSampling/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/Tools/VolumeSampling/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/Tools/VolumeSampling/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="VolumeSampling/fast">
+				<Option output="/home/jason/splisplash/bin/VolumeSampling_d" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jason/splisplash/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DLIBBULLET_VERSION=2.87"/>
+					<Add option="-DLIBBULLET_VERSION_GT_282"/>
+					<Add directory="/home/jason/.local/include"/>
+					<Add directory="/home/jason/.local/include/gazebo-9"/>
+					<Add directory="/usr/include/bullet"/>
+					<Add directory="/usr/include/simbody"/>
+					<Add directory="/usr/include/sdformat-6.2"/>
+					<Add directory="/usr/include/ignition/math4"/>
+					<Add directory="/usr/include/OGRE"/>
+					<Add directory="/usr/include/OGRE/Terrain"/>
+					<Add directory="/usr/include/OGRE/Paging"/>
+					<Add directory="/usr/include/ignition/transport4"/>
+					<Add directory="/usr/include/ignition/msgs1"/>
+					<Add directory="/usr/include/ignition/common1"/>
+					<Add directory="/usr/include/ignition/fuel_tools1"/>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/home/jason/splisplash/cmake-build-debug/extern/install/NeighborhoodSearch/include"/>
+					<Add directory="/home/jason/splisplash/cmake-build-debug/extern/install/GenericParameters/include"/>
+					<Add directory="/home/jason/splisplash/cmake-build-debug/extern/install/Discregrid/include"/>
+					<Add directory="/home/jason/splisplash"/>
+					<Add directory="/home/jason/splisplash/extern/zlib/src"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/Tools/VolumeSampling/Makefile&quot;  VERBOSE=1 VolumeSampling/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/Tools/VolumeSampling/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/Tools/VolumeSampling/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/Tools/VolumeSampling/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="partio2vtk">
+				<Option output="/home/jason/splisplash/bin/partio2vtk_d" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jason/splisplash/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DSPH_DATA_PATH=&quot;../data&quot;"/>
+					<Add option="-DLIBBULLET_VERSION=2.87"/>
+					<Add option="-DLIBBULLET_VERSION_GT_282"/>
+					<Add directory="/home/jason/.local/include"/>
+					<Add directory="/home/jason/.local/include/gazebo-9"/>
+					<Add directory="/usr/include/bullet"/>
+					<Add directory="/usr/include/simbody"/>
+					<Add directory="/usr/include/sdformat-6.2"/>
+					<Add directory="/usr/include/ignition/math4"/>
+					<Add directory="/usr/include/OGRE"/>
+					<Add directory="/usr/include/OGRE/Terrain"/>
+					<Add directory="/usr/include/OGRE/Paging"/>
+					<Add directory="/usr/include/ignition/transport4"/>
+					<Add directory="/usr/include/ignition/msgs1"/>
+					<Add directory="/usr/include/ignition/common1"/>
+					<Add directory="/usr/include/ignition/fuel_tools1"/>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/home/jason/splisplash/cmake-build-debug/extern/install/NeighborhoodSearch/include"/>
+					<Add directory="/home/jason/splisplash/cmake-build-debug/extern/install/GenericParameters/include"/>
+					<Add directory="/home/jason/splisplash/cmake-build-debug/extern/install/Discregrid/include"/>
+					<Add directory="/home/jason/splisplash"/>
+					<Add directory="/home/jason/splisplash/extern/zlib/src"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/Tools/partio2vtk/Makefile&quot;  VERBOSE=1 partio2vtk"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/Tools/partio2vtk/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/Tools/partio2vtk/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/Tools/partio2vtk/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="partio2vtk/fast">
+				<Option output="/home/jason/splisplash/bin/partio2vtk_d" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jason/splisplash/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DSPH_DATA_PATH=&quot;../data&quot;"/>
+					<Add option="-DLIBBULLET_VERSION=2.87"/>
+					<Add option="-DLIBBULLET_VERSION_GT_282"/>
+					<Add directory="/home/jason/.local/include"/>
+					<Add directory="/home/jason/.local/include/gazebo-9"/>
+					<Add directory="/usr/include/bullet"/>
+					<Add directory="/usr/include/simbody"/>
+					<Add directory="/usr/include/sdformat-6.2"/>
+					<Add directory="/usr/include/ignition/math4"/>
+					<Add directory="/usr/include/OGRE"/>
+					<Add directory="/usr/include/OGRE/Terrain"/>
+					<Add directory="/usr/include/OGRE/Paging"/>
+					<Add directory="/usr/include/ignition/transport4"/>
+					<Add directory="/usr/include/ignition/msgs1"/>
+					<Add directory="/usr/include/ignition/common1"/>
+					<Add directory="/usr/include/ignition/fuel_tools1"/>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/home/jason/splisplash/cmake-build-debug/extern/install/NeighborhoodSearch/include"/>
+					<Add directory="/home/jason/splisplash/cmake-build-debug/extern/install/GenericParameters/include"/>
+					<Add directory="/home/jason/splisplash/cmake-build-debug/extern/install/Discregrid/include"/>
+					<Add directory="/home/jason/splisplash"/>
+					<Add directory="/home/jason/splisplash/extern/zlib/src"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/Tools/partio2vtk/Makefile&quot;  VERBOSE=1 partio2vtk/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/Tools/partio2vtk/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/Tools/partio2vtk/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/Tools/partio2vtk/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="GazeboFluidVisualizer">
+				<Option output="/home/jason/splisplash/cmake-build-debug/lib/libGazeboFluidVisualizer_d.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jason/splisplash/cmake-build-debug/Simulator"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DLIBBULLET_VERSION=2.87"/>
+					<Add option="-DLIBBULLET_VERSION_GT_282"/>
+					<Add option="-DTW_NO_LIB_PRAGMA"/>
+					<Add option="-DTW_STATIC"/>
+					<Add directory="/home/jason/.local/include"/>
+					<Add directory="/home/jason/.local/include/gazebo-9"/>
+					<Add directory="/usr/include/bullet"/>
+					<Add directory="/usr/include/simbody"/>
+					<Add directory="/usr/include/sdformat-6.2"/>
+					<Add directory="/usr/include/ignition/math4"/>
+					<Add directory="/usr/include/OGRE"/>
+					<Add directory="/usr/include/OGRE/Terrain"/>
+					<Add directory="/usr/include/OGRE/Paging"/>
+					<Add directory="/usr/include/ignition/transport4"/>
+					<Add directory="/usr/include/ignition/msgs1"/>
+					<Add directory="/usr/include/ignition/common1"/>
+					<Add directory="/usr/include/ignition/fuel_tools1"/>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/home/jason/splisplash/cmake-build-debug/extern/install/NeighborhoodSearch/include"/>
+					<Add directory="/home/jason/splisplash/cmake-build-debug/extern/install/Discregrid/include"/>
+					<Add directory="/home/jason/splisplash/cmake-build-debug/extern/install/GenericParameters/include"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/Simulator/Makefile&quot;  VERBOSE=1 GazeboFluidVisualizer"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/Simulator/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/Simulator/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/Simulator/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="GazeboFluidVisualizer/fast">
+				<Option output="/home/jason/splisplash/cmake-build-debug/lib/libGazeboFluidVisualizer_d.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jason/splisplash/cmake-build-debug/Simulator"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DLIBBULLET_VERSION=2.87"/>
+					<Add option="-DLIBBULLET_VERSION_GT_282"/>
+					<Add option="-DTW_NO_LIB_PRAGMA"/>
+					<Add option="-DTW_STATIC"/>
+					<Add directory="/home/jason/.local/include"/>
+					<Add directory="/home/jason/.local/include/gazebo-9"/>
+					<Add directory="/usr/include/bullet"/>
+					<Add directory="/usr/include/simbody"/>
+					<Add directory="/usr/include/sdformat-6.2"/>
+					<Add directory="/usr/include/ignition/math4"/>
+					<Add directory="/usr/include/OGRE"/>
+					<Add directory="/usr/include/OGRE/Terrain"/>
+					<Add directory="/usr/include/OGRE/Paging"/>
+					<Add directory="/usr/include/ignition/transport4"/>
+					<Add directory="/usr/include/ignition/msgs1"/>
+					<Add directory="/usr/include/ignition/common1"/>
+					<Add directory="/usr/include/ignition/fuel_tools1"/>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/home/jason/splisplash/cmake-build-debug/extern/install/NeighborhoodSearch/include"/>
+					<Add directory="/home/jason/splisplash/cmake-build-debug/extern/install/Discregrid/include"/>
+					<Add directory="/home/jason/splisplash/cmake-build-debug/extern/install/GenericParameters/include"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/Simulator/Makefile&quot;  VERBOSE=1 GazeboFluidVisualizer/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/Simulator/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/Simulator/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/Simulator/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="GazeboFluidSimulator">
+				<Option output="/home/jason/splisplash/cmake-build-debug/lib/libGazeboFluidSimulator_d.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jason/splisplash/cmake-build-debug/Simulator"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DLIBBULLET_VERSION=2.87"/>
+					<Add option="-DLIBBULLET_VERSION_GT_282"/>
+					<Add option="-DTW_NO_LIB_PRAGMA"/>
+					<Add option="-DTW_STATIC"/>
+					<Add directory="/home/jason/.local/include"/>
+					<Add directory="/home/jason/.local/include/gazebo-9"/>
+					<Add directory="/usr/include/bullet"/>
+					<Add directory="/usr/include/simbody"/>
+					<Add directory="/usr/include/sdformat-6.2"/>
+					<Add directory="/usr/include/OGRE"/>
+					<Add directory="/usr/include/OGRE/Terrain"/>
+					<Add directory="/usr/include/OGRE/Paging"/>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/home/jason/splisplash/cmake-build-debug/extern/install/NeighborhoodSearch/include"/>
+					<Add directory="/home/jason/splisplash/cmake-build-debug/extern/install/Discregrid/include"/>
+					<Add directory="/home/jason/splisplash/cmake-build-debug/extern/install/GenericParameters/include"/>
+					<Add directory="/home/jason/splisplash"/>
+					<Add directory="/home/jason/splisplash/extern/zlib/src"/>
+					<Add directory="/usr/include/ignition/math4"/>
+					<Add directory="/usr/include/ignition/transport4"/>
+					<Add directory="/usr/include/ignition/msgs1"/>
+					<Add directory="/usr/include/ignition/common1"/>
+					<Add directory="/usr/include/ignition/fuel_tools1"/>
+					<Add directory="/usr/include/uuid"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/Simulator/Makefile&quot;  VERBOSE=1 GazeboFluidSimulator"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/Simulator/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/Simulator/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/Simulator/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="GazeboFluidSimulator/fast">
+				<Option output="/home/jason/splisplash/cmake-build-debug/lib/libGazeboFluidSimulator_d.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jason/splisplash/cmake-build-debug/Simulator"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DLIBBULLET_VERSION=2.87"/>
+					<Add option="-DLIBBULLET_VERSION_GT_282"/>
+					<Add option="-DTW_NO_LIB_PRAGMA"/>
+					<Add option="-DTW_STATIC"/>
+					<Add directory="/home/jason/.local/include"/>
+					<Add directory="/home/jason/.local/include/gazebo-9"/>
+					<Add directory="/usr/include/bullet"/>
+					<Add directory="/usr/include/simbody"/>
+					<Add directory="/usr/include/sdformat-6.2"/>
+					<Add directory="/usr/include/OGRE"/>
+					<Add directory="/usr/include/OGRE/Terrain"/>
+					<Add directory="/usr/include/OGRE/Paging"/>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/home/jason/splisplash/cmake-build-debug/extern/install/NeighborhoodSearch/include"/>
+					<Add directory="/home/jason/splisplash/cmake-build-debug/extern/install/Discregrid/include"/>
+					<Add directory="/home/jason/splisplash/cmake-build-debug/extern/install/GenericParameters/include"/>
+					<Add directory="/home/jason/splisplash"/>
+					<Add directory="/home/jason/splisplash/extern/zlib/src"/>
+					<Add directory="/usr/include/ignition/math4"/>
+					<Add directory="/usr/include/ignition/transport4"/>
+					<Add directory="/usr/include/ignition/msgs1"/>
+					<Add directory="/usr/include/ignition/common1"/>
+					<Add directory="/usr/include/ignition/fuel_tools1"/>
+					<Add directory="/usr/include/uuid"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/Simulator/Makefile&quot;  VERBOSE=1 GazeboFluidSimulator/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/Simulator/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/Simulator/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/Simulator/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="SPHSimulator">
+				<Option output="/home/jason/splisplash/bin/SPHSimulator_d" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jason/splisplash/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DSPH_DATA_PATH=&quot;../data&quot;"/>
+					<Add option="-DUSE_PBD"/>
+					<Add option="-DTW_NO_LIB_PRAGMA"/>
+					<Add option="-DTW_STATIC"/>
+					<Add option="-DLIBBULLET_VERSION=2.87"/>
+					<Add option="-DLIBBULLET_VERSION_GT_282"/>
+					<Add directory="/home/jason/.local/include"/>
+					<Add directory="/home/jason/.local/include/gazebo-9"/>
+					<Add directory="/usr/include/bullet"/>
+					<Add directory="/usr/include/simbody"/>
+					<Add directory="/usr/include/sdformat-6.2"/>
+					<Add directory="/usr/include/ignition/math4"/>
+					<Add directory="/usr/include/OGRE"/>
+					<Add directory="/usr/include/OGRE/Terrain"/>
+					<Add directory="/usr/include/OGRE/Paging"/>
+					<Add directory="/usr/include/ignition/transport4"/>
+					<Add directory="/usr/include/ignition/msgs1"/>
+					<Add directory="/usr/include/ignition/common1"/>
+					<Add directory="/usr/include/ignition/fuel_tools1"/>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/home/jason/splisplash/cmake-build-debug/extern/install/NeighborhoodSearch/include"/>
+					<Add directory="/home/jason/splisplash/cmake-build-debug/extern/install/Discregrid/include"/>
+					<Add directory="/home/jason/splisplash/cmake-build-debug/extern/install/GenericParameters/include"/>
+					<Add directory="/home/jason/splisplash"/>
+					<Add directory="/home/jason/splisplash/extern/zlib/src"/>
+					<Add directory="/home/jason/splisplash/extern/glew/include"/>
+					<Add directory="/home/jason/splisplash/cmake-build-debug/extern/install/PositionBasedDynamics/include"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/Simulator/Makefile&quot;  VERBOSE=1 SPHSimulator"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/Simulator/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/Simulator/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/Simulator/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="SPHSimulator/fast">
+				<Option output="/home/jason/splisplash/bin/SPHSimulator_d" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jason/splisplash/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DSPH_DATA_PATH=&quot;../data&quot;"/>
+					<Add option="-DUSE_PBD"/>
+					<Add option="-DTW_NO_LIB_PRAGMA"/>
+					<Add option="-DTW_STATIC"/>
+					<Add option="-DLIBBULLET_VERSION=2.87"/>
+					<Add option="-DLIBBULLET_VERSION_GT_282"/>
+					<Add directory="/home/jason/.local/include"/>
+					<Add directory="/home/jason/.local/include/gazebo-9"/>
+					<Add directory="/usr/include/bullet"/>
+					<Add directory="/usr/include/simbody"/>
+					<Add directory="/usr/include/sdformat-6.2"/>
+					<Add directory="/usr/include/ignition/math4"/>
+					<Add directory="/usr/include/OGRE"/>
+					<Add directory="/usr/include/OGRE/Terrain"/>
+					<Add directory="/usr/include/OGRE/Paging"/>
+					<Add directory="/usr/include/ignition/transport4"/>
+					<Add directory="/usr/include/ignition/msgs1"/>
+					<Add directory="/usr/include/ignition/common1"/>
+					<Add directory="/usr/include/ignition/fuel_tools1"/>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/home/jason/splisplash/cmake-build-debug/extern/install/NeighborhoodSearch/include"/>
+					<Add directory="/home/jason/splisplash/cmake-build-debug/extern/install/Discregrid/include"/>
+					<Add directory="/home/jason/splisplash/cmake-build-debug/extern/install/GenericParameters/include"/>
+					<Add directory="/home/jason/splisplash"/>
+					<Add directory="/home/jason/splisplash/extern/zlib/src"/>
+					<Add directory="/home/jason/splisplash/extern/glew/include"/>
+					<Add directory="/home/jason/splisplash/cmake-build-debug/extern/install/PositionBasedDynamics/include"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/Simulator/Makefile&quot;  VERBOSE=1 SPHSimulator/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/Simulator/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/Simulator/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/Simulator/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="KernelTests">
+				<Option output="/home/jason/splisplash/bin/KernelTests_d" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jason/splisplash/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DLIBBULLET_VERSION=2.87"/>
+					<Add option="-DLIBBULLET_VERSION_GT_282"/>
+					<Add directory="/home/jason/.local/include"/>
+					<Add directory="/home/jason/.local/include/gazebo-9"/>
+					<Add directory="/usr/include/bullet"/>
+					<Add directory="/usr/include/simbody"/>
+					<Add directory="/usr/include/sdformat-6.2"/>
+					<Add directory="/usr/include/ignition/math4"/>
+					<Add directory="/usr/include/OGRE"/>
+					<Add directory="/usr/include/OGRE/Terrain"/>
+					<Add directory="/usr/include/OGRE/Paging"/>
+					<Add directory="/usr/include/ignition/transport4"/>
+					<Add directory="/usr/include/ignition/msgs1"/>
+					<Add directory="/usr/include/ignition/common1"/>
+					<Add directory="/usr/include/ignition/fuel_tools1"/>
+					<Add directory="/home/jason/splisplash/extern/Catch2"/>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/home/jason/splisplash/cmake-build-debug/extern/install/NeighborhoodSearch/include"/>
+					<Add directory="/home/jason/splisplash/cmake-build-debug/extern/install/GenericParameters/include"/>
+					<Add directory="/home/jason/splisplash/cmake-build-debug/extern/install/Discregrid/include"/>
+					<Add directory="/home/jason/splisplash"/>
+					<Add directory="/home/jason/splisplash/extern/zlib/src"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/Tests/Kernel/Makefile&quot;  VERBOSE=1 KernelTests"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/Tests/Kernel/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/Tests/Kernel/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/Tests/Kernel/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="KernelTests/fast">
+				<Option output="/home/jason/splisplash/bin/KernelTests_d" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jason/splisplash/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DLIBBULLET_VERSION=2.87"/>
+					<Add option="-DLIBBULLET_VERSION_GT_282"/>
+					<Add directory="/home/jason/.local/include"/>
+					<Add directory="/home/jason/.local/include/gazebo-9"/>
+					<Add directory="/usr/include/bullet"/>
+					<Add directory="/usr/include/simbody"/>
+					<Add directory="/usr/include/sdformat-6.2"/>
+					<Add directory="/usr/include/ignition/math4"/>
+					<Add directory="/usr/include/OGRE"/>
+					<Add directory="/usr/include/OGRE/Terrain"/>
+					<Add directory="/usr/include/OGRE/Paging"/>
+					<Add directory="/usr/include/ignition/transport4"/>
+					<Add directory="/usr/include/ignition/msgs1"/>
+					<Add directory="/usr/include/ignition/common1"/>
+					<Add directory="/usr/include/ignition/fuel_tools1"/>
+					<Add directory="/home/jason/splisplash/extern/Catch2"/>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/home/jason/splisplash/cmake-build-debug/extern/install/NeighborhoodSearch/include"/>
+					<Add directory="/home/jason/splisplash/cmake-build-debug/extern/install/GenericParameters/include"/>
+					<Add directory="/home/jason/splisplash/cmake-build-debug/extern/install/Discregrid/include"/>
+					<Add directory="/home/jason/splisplash"/>
+					<Add directory="/home/jason/splisplash/extern/zlib/src"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/Tests/Kernel/Makefile&quot;  VERBOSE=1 KernelTests/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/Tests/Kernel/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/Tests/Kernel/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/jason/splisplash/cmake-build-debug/Tests/Kernel/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/jason/splisplash/GUI/OpenGL/MiniGL.cpp">
+			<Option target="PartioViewer"/>
+			<Option target="SPHSimulator"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/GUI/OpenGL/MiniGL.h">
+			<Option target="PartioViewer"/>
+			<Option target="SPHSimulator"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/GUI/OpenGL/Selection.h">
+			<Option target="PartioViewer"/>
+			<Option target="SPHSimulator"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/GUI/OpenGL/Shader.cpp">
+			<Option target="PartioViewer"/>
+			<Option target="SPHSimulator"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/GUI/OpenGL/Shader.h">
+			<Option target="PartioViewer"/>
+			<Option target="SPHSimulator"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/GUI/OpenGL/colormaps/colormap_jet.h">
+			<Option target="PartioViewer"/>
+			<Option target="SPHSimulator"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/GUI/OpenGL/colormaps/colormap_plasma.h">
+			<Option target="PartioViewer"/>
+			<Option target="SPHSimulator"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/GUI/TweakBar/TweakBarParameters.cpp">
+			<Option target="PartioViewer"/>
+			<Option target="SPHSimulator"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/GUI/TweakBar/TweakBarParameters.h">
+			<Option target="PartioViewer"/>
+			<Option target="SPHSimulator"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/SPlisHSPlasH/AnimationField.cpp">
+			<Option target="SPlisHSPlasH"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/SPlisHSPlasH/AnimationField.h">
+			<Option target="SPlisHSPlasH"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/SPlisHSPlasH/AnimationFieldSystem.cpp">
+			<Option target="SPlisHSPlasH"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/SPlisHSPlasH/AnimationFieldSystem.h">
+			<Option target="SPlisHSPlasH"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/SPlisHSPlasH/BoundaryModel.cpp">
+			<Option target="SPlisHSPlasH"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/SPlisHSPlasH/BoundaryModel.h">
+			<Option target="SPlisHSPlasH"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/SPlisHSPlasH/BoundaryModel_Akinci2012.cpp">
+			<Option target="SPlisHSPlasH"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/SPlisHSPlasH/BoundaryModel_Akinci2012.h">
+			<Option target="SPlisHSPlasH"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/SPlisHSPlasH/BoundaryModel_Bender2019.cpp">
+			<Option target="SPlisHSPlasH"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/SPlisHSPlasH/BoundaryModel_Bender2019.h">
+			<Option target="SPlisHSPlasH"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/SPlisHSPlasH/BoundaryModel_Koschier2017.cpp">
+			<Option target="SPlisHSPlasH"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/SPlisHSPlasH/BoundaryModel_Koschier2017.h">
+			<Option target="SPlisHSPlasH"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/SPlisHSPlasH/Common.h">
+			<Option target="SPlisHSPlasH"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/SPlisHSPlasH/DFSPH/SimulationDataDFSPH.cpp">
+			<Option target="SPlisHSPlasH"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/SPlisHSPlasH/DFSPH/SimulationDataDFSPH.h">
+			<Option target="SPlisHSPlasH"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/SPlisHSPlasH/DFSPH/TimeStepDFSPH.cpp">
+			<Option target="SPlisHSPlasH"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/SPlisHSPlasH/DFSPH/TimeStepDFSPH.h">
+			<Option target="SPlisHSPlasH"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/SPlisHSPlasH/Drag/DragBase.cpp">
+			<Option target="SPlisHSPlasH"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/SPlisHSPlasH/Drag/DragBase.h">
+			<Option target="SPlisHSPlasH"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/SPlisHSPlasH/Drag/DragForce_Gissler2017.cpp">
+			<Option target="SPlisHSPlasH"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/SPlisHSPlasH/Drag/DragForce_Gissler2017.h">
+			<Option target="SPlisHSPlasH"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/SPlisHSPlasH/Drag/DragForce_Macklin2014.cpp">
+			<Option target="SPlisHSPlasH"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/SPlisHSPlasH/Drag/DragForce_Macklin2014.h">
+			<Option target="SPlisHSPlasH"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/SPlisHSPlasH/Elasticity/ElasticityBase.cpp">
+			<Option target="SPlisHSPlasH"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/SPlisHSPlasH/Elasticity/ElasticityBase.h">
+			<Option target="SPlisHSPlasH"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/SPlisHSPlasH/Elasticity/Elasticity_Becker2009.cpp">
+			<Option target="SPlisHSPlasH"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/SPlisHSPlasH/Elasticity/Elasticity_Becker2009.h">
+			<Option target="SPlisHSPlasH"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/SPlisHSPlasH/Elasticity/Elasticity_Peer2018.cpp">
+			<Option target="SPlisHSPlasH"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/SPlisHSPlasH/Elasticity/Elasticity_Peer2018.h">
+			<Option target="SPlisHSPlasH"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/SPlisHSPlasH/Emitter.cpp">
+			<Option target="SPlisHSPlasH"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/SPlisHSPlasH/Emitter.h">
+			<Option target="SPlisHSPlasH"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/SPlisHSPlasH/EmitterSystem.cpp">
+			<Option target="SPlisHSPlasH"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/SPlisHSPlasH/EmitterSystem.h">
+			<Option target="SPlisHSPlasH"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/SPlisHSPlasH/FluidModel.cpp">
+			<Option target="SPlisHSPlasH"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/SPlisHSPlasH/FluidModel.h">
+			<Option target="SPlisHSPlasH"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/SPlisHSPlasH/IISPH/SimulationDataIISPH.cpp">
+			<Option target="SPlisHSPlasH"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/SPlisHSPlasH/IISPH/SimulationDataIISPH.h">
+			<Option target="SPlisHSPlasH"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/SPlisHSPlasH/IISPH/TimeStepIISPH.cpp">
+			<Option target="SPlisHSPlasH"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/SPlisHSPlasH/IISPH/TimeStepIISPH.h">
+			<Option target="SPlisHSPlasH"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/SPlisHSPlasH/NeighborhoodSearch.h">
+			<Option target="SPlisHSPlasH"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/SPlisHSPlasH/NonPressureForceBase.cpp">
+			<Option target="SPlisHSPlasH"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/SPlisHSPlasH/NonPressureForceBase.h">
+			<Option target="SPlisHSPlasH"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/SPlisHSPlasH/PBF/SimulationDataPBF.cpp">
+			<Option target="SPlisHSPlasH"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/SPlisHSPlasH/PBF/SimulationDataPBF.h">
+			<Option target="SPlisHSPlasH"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/SPlisHSPlasH/PBF/TimeIntegration.cpp">
+			<Option target="SPlisHSPlasH"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/SPlisHSPlasH/PBF/TimeIntegration.h">
+			<Option target="SPlisHSPlasH"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/SPlisHSPlasH/PBF/TimeStepPBF.cpp">
+			<Option target="SPlisHSPlasH"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/SPlisHSPlasH/PBF/TimeStepPBF.h">
+			<Option target="SPlisHSPlasH"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/SPlisHSPlasH/PCISPH/SimulationDataPCISPH.cpp">
+			<Option target="SPlisHSPlasH"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/SPlisHSPlasH/PCISPH/SimulationDataPCISPH.h">
+			<Option target="SPlisHSPlasH"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/SPlisHSPlasH/PCISPH/TimeStepPCISPH.cpp">
+			<Option target="SPlisHSPlasH"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/SPlisHSPlasH/PCISPH/TimeStepPCISPH.h">
+			<Option target="SPlisHSPlasH"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/SPlisHSPlasH/PF/SimulationDataPF.cpp">
+			<Option target="SPlisHSPlasH"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/SPlisHSPlasH/PF/SimulationDataPF.h">
+			<Option target="SPlisHSPlasH"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/SPlisHSPlasH/PF/TimeStepPF.cpp">
+			<Option target="SPlisHSPlasH"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/SPlisHSPlasH/PF/TimeStepPF.h">
+			<Option target="SPlisHSPlasH"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/SPlisHSPlasH/RigidBodyObject.h">
+			<Option target="SPlisHSPlasH"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/SPlisHSPlasH/SPHKernels.cpp">
+			<Option target="SPlisHSPlasH"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/SPlisHSPlasH/SPHKernels.h">
+			<Option target="SPlisHSPlasH"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/SPlisHSPlasH/Simulation.cpp">
+			<Option target="SPlisHSPlasH"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/SPlisHSPlasH/Simulation.h">
+			<Option target="SPlisHSPlasH"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/SPlisHSPlasH/StaticRigidBody.h">
+			<Option target="SPlisHSPlasH"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/SPlisHSPlasH/SurfaceTension/SurfaceTensionBase.cpp">
+			<Option target="SPlisHSPlasH"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/SPlisHSPlasH/SurfaceTension/SurfaceTensionBase.h">
+			<Option target="SPlisHSPlasH"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/SPlisHSPlasH/SurfaceTension/SurfaceTension_Akinci2013.cpp">
+			<Option target="SPlisHSPlasH"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/SPlisHSPlasH/SurfaceTension/SurfaceTension_Akinci2013.h">
+			<Option target="SPlisHSPlasH"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/SPlisHSPlasH/SurfaceTension/SurfaceTension_Becker2007.cpp">
+			<Option target="SPlisHSPlasH"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/SPlisHSPlasH/SurfaceTension/SurfaceTension_Becker2007.h">
+			<Option target="SPlisHSPlasH"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/SPlisHSPlasH/SurfaceTension/SurfaceTension_He2014.cpp">
+			<Option target="SPlisHSPlasH"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/SPlisHSPlasH/SurfaceTension/SurfaceTension_He2014.h">
+			<Option target="SPlisHSPlasH"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/SPlisHSPlasH/TimeManager.cpp">
+			<Option target="SPlisHSPlasH"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/SPlisHSPlasH/TimeManager.h">
+			<Option target="SPlisHSPlasH"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/SPlisHSPlasH/TimeStep.cpp">
+			<Option target="SPlisHSPlasH"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/SPlisHSPlasH/TimeStep.h">
+			<Option target="SPlisHSPlasH"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/SPlisHSPlasH/TriangleMesh.cpp">
+			<Option target="SPlisHSPlasH"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/SPlisHSPlasH/TriangleMesh.h">
+			<Option target="SPlisHSPlasH"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/SPlisHSPlasH/Utilities/AVX_math.h">
+			<Option target="SPlisHSPlasH"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/SPlisHSPlasH/Utilities/GaussQuadrature.cpp">
+			<Option target="SPlisHSPlasH"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/SPlisHSPlasH/Utilities/GaussQuadrature.h">
+			<Option target="SPlisHSPlasH"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/SPlisHSPlasH/Utilities/MathFunctions.cpp">
+			<Option target="SPlisHSPlasH"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/SPlisHSPlasH/Utilities/MathFunctions.h">
+			<Option target="SPlisHSPlasH"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/SPlisHSPlasH/Utilities/MatrixFreeSolver.h">
+			<Option target="SPlisHSPlasH"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/SPlisHSPlasH/Utilities/PoissonDiskSampling.cpp">
+			<Option target="SPlisHSPlasH"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/SPlisHSPlasH/Utilities/PoissonDiskSampling.h">
+			<Option target="SPlisHSPlasH"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/SPlisHSPlasH/Utilities/RegularSampling2D.cpp">
+			<Option target="SPlisHSPlasH"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/SPlisHSPlasH/Utilities/RegularSampling2D.h">
+			<Option target="SPlisHSPlasH"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/SPlisHSPlasH/Utilities/RegularTriangleSampling.cpp">
+			<Option target="SPlisHSPlasH"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/SPlisHSPlasH/Utilities/RegularTriangleSampling.h">
+			<Option target="SPlisHSPlasH"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/SPlisHSPlasH/Utilities/SDFFunctions.cpp">
+			<Option target="SPlisHSPlasH"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/SPlisHSPlasH/Utilities/SDFFunctions.h">
+			<Option target="SPlisHSPlasH"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/SPlisHSPlasH/Utilities/SceneLoader.cpp">
+			<Option target="SPlisHSPlasH"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/SPlisHSPlasH/Utilities/SceneLoader.h">
+			<Option target="SPlisHSPlasH"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/SPlisHSPlasH/Utilities/SimpleQuadrature.cpp">
+			<Option target="SPlisHSPlasH"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/SPlisHSPlasH/Utilities/SimpleQuadrature.h">
+			<Option target="SPlisHSPlasH"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/SPlisHSPlasH/Utilities/SurfaceSampling.h">
+			<Option target="SPlisHSPlasH"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/SPlisHSPlasH/Utilities/VolumeSampling.cpp">
+			<Option target="SPlisHSPlasH"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/SPlisHSPlasH/Utilities/VolumeSampling.h">
+			<Option target="SPlisHSPlasH"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/SPlisHSPlasH/Utilities/WindingNumbers.cpp">
+			<Option target="SPlisHSPlasH"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/SPlisHSPlasH/Utilities/WindingNumbers.h">
+			<Option target="SPlisHSPlasH"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/SPlisHSPlasH/Viscosity/ViscosityBase.cpp">
+			<Option target="SPlisHSPlasH"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/SPlisHSPlasH/Viscosity/ViscosityBase.h">
+			<Option target="SPlisHSPlasH"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/SPlisHSPlasH/Viscosity/Viscosity_Bender2017.cpp">
+			<Option target="SPlisHSPlasH"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/SPlisHSPlasH/Viscosity/Viscosity_Bender2017.h">
+			<Option target="SPlisHSPlasH"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/SPlisHSPlasH/Viscosity/Viscosity_Peer2015.cpp">
+			<Option target="SPlisHSPlasH"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/SPlisHSPlasH/Viscosity/Viscosity_Peer2015.h">
+			<Option target="SPlisHSPlasH"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/SPlisHSPlasH/Viscosity/Viscosity_Peer2016.cpp">
+			<Option target="SPlisHSPlasH"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/SPlisHSPlasH/Viscosity/Viscosity_Peer2016.h">
+			<Option target="SPlisHSPlasH"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/SPlisHSPlasH/Viscosity/Viscosity_Standard.cpp">
+			<Option target="SPlisHSPlasH"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/SPlisHSPlasH/Viscosity/Viscosity_Standard.h">
+			<Option target="SPlisHSPlasH"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/SPlisHSPlasH/Viscosity/Viscosity_Takahashi2015.cpp">
+			<Option target="SPlisHSPlasH"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/SPlisHSPlasH/Viscosity/Viscosity_Takahashi2015.h">
+			<Option target="SPlisHSPlasH"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/SPlisHSPlasH/Viscosity/Viscosity_Weiler2018.cpp">
+			<Option target="SPlisHSPlasH"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/SPlisHSPlasH/Viscosity/Viscosity_Weiler2018.h">
+			<Option target="SPlisHSPlasH"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/SPlisHSPlasH/Viscosity/Viscosity_XSPH.cpp">
+			<Option target="SPlisHSPlasH"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/SPlisHSPlasH/Viscosity/Viscosity_XSPH.h">
+			<Option target="SPlisHSPlasH"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/SPlisHSPlasH/Vorticity/MicropolarModel_Bender2017.cpp">
+			<Option target="SPlisHSPlasH"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/SPlisHSPlasH/Vorticity/MicropolarModel_Bender2017.h">
+			<Option target="SPlisHSPlasH"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/SPlisHSPlasH/Vorticity/VorticityBase.cpp">
+			<Option target="SPlisHSPlasH"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/SPlisHSPlasH/Vorticity/VorticityBase.h">
+			<Option target="SPlisHSPlasH"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/SPlisHSPlasH/Vorticity/VorticityConfinement.cpp">
+			<Option target="SPlisHSPlasH"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/SPlisHSPlasH/Vorticity/VorticityConfinement.h">
+			<Option target="SPlisHSPlasH"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/SPlisHSPlasH/WCSPH/SimulationDataWCSPH.cpp">
+			<Option target="SPlisHSPlasH"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/SPlisHSPlasH/WCSPH/SimulationDataWCSPH.h">
+			<Option target="SPlisHSPlasH"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/SPlisHSPlasH/WCSPH/TimeStepWCSPH.cpp">
+			<Option target="SPlisHSPlasH"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/SPlisHSPlasH/WCSPH/TimeStepWCSPH.h">
+			<Option target="SPlisHSPlasH"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/Simulator/BoundarySimulator.cpp">
+			<Option target="SPHSimulator"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/Simulator/BoundarySimulator.h">
+			<Option target="SPHSimulator"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/Simulator/GUI/GazeboFluidVisualizer/GazeboFluidVisualizer.cpp">
+			<Option target="GazeboFluidVisualizer"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/Simulator/GUI/GazeboFluidVisualizer/GazeboFluidVisualizer.h">
+			<Option target="GazeboFluidVisualizer"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/Simulator/GUI/OpenGL/Simulator_OpenGL.cpp">
+			<Option target="SPHSimulator"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/Simulator/GUI/OpenGL/Simulator_OpenGL.h">
+			<Option target="SPHSimulator"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/Simulator/GUI/Simulator_GUI_Base.h">
+			<Option target="SPHSimulator"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/Simulator/GUI/TweakBar/Simulator_GUI_TweakBar.cpp">
+			<Option target="SPHSimulator"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/Simulator/GUI/TweakBar/Simulator_GUI_TweakBar.h">
+			<Option target="SPHSimulator"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/Simulator/GazeboWrapper/GazeboFluidSimulator.cpp">
+			<Option target="GazeboFluidSimulator"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/Simulator/GazeboWrapper/GazeboFluidSimulator.h">
+			<Option target="GazeboFluidSimulator"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/Simulator/GazeboWrapper/GazeboSceneLoader.cpp">
+			<Option target="GazeboFluidSimulator"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/Simulator/GazeboWrapper/GazeboSceneLoader.h">
+			<Option target="GazeboFluidSimulator"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/Simulator/GazeboWrapper/GazeboSimulatorBase.cpp">
+			<Option target="GazeboFluidSimulator"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/Simulator/GazeboWrapper/GazeboSimulatorBase.h">
+			<Option target="GazeboFluidSimulator"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/Simulator/PositionBasedDynamicsWrapper/PBDBoundarySimulator.cpp">
+			<Option target="SPHSimulator"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/Simulator/PositionBasedDynamicsWrapper/PBDBoundarySimulator.h">
+			<Option target="SPHSimulator"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/Simulator/PositionBasedDynamicsWrapper/PBDRigidBody.h">
+			<Option target="SPHSimulator"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/Simulator/PositionBasedDynamicsWrapper/PBDWrapper.cpp">
+			<Option target="SPHSimulator"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/Simulator/PositionBasedDynamicsWrapper/PBDWrapper.h">
+			<Option target="SPHSimulator"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/Simulator/PositionBasedDynamicsWrapper/PBD_Simulator_GUI_TweakBar.cpp">
+			<Option target="SPHSimulator"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/Simulator/PositionBasedDynamicsWrapper/PBD_Simulator_GUI_TweakBar.h">
+			<Option target="SPHSimulator"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/Simulator/SimulatorBase.cpp">
+			<Option target="SPHSimulator"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/Simulator/SimulatorBase.h">
+			<Option target="SPHSimulator"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/Simulator/StaticBoundarySimulator.cpp">
+			<Option target="SPHSimulator"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/Simulator/StaticBoundarySimulator.h">
+			<Option target="SPHSimulator"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/Simulator/main.cpp">
+			<Option target="SPHSimulator"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/Tests/Kernel/KernelTests.cpp">
+			<Option target="KernelTests"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/Tools/PartioViewer/GUI/OpenGL/PartioViewer_OpenGL.cpp">
+			<Option target="PartioViewer"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/Tools/PartioViewer/GUI/OpenGL/PartioViewer_OpenGL.h">
+			<Option target="PartioViewer"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/Tools/PartioViewer/GUI/PartioViewer_GUI_Base.h">
+			<Option target="PartioViewer"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/Tools/PartioViewer/GUI/TweakBar/PartioViewer_GUI_TweakBar.cpp">
+			<Option target="PartioViewer"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/Tools/PartioViewer/GUI/TweakBar/PartioViewer_GUI_TweakBar.h">
+			<Option target="PartioViewer"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/Tools/PartioViewer/PartioViewer.cpp">
+			<Option target="PartioViewer"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/Tools/PartioViewer/PartioViewer.h">
+			<Option target="PartioViewer"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/Tools/PartioViewer/main.cpp">
+			<Option target="PartioViewer"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/Tools/SurfaceSampling/main.cpp">
+			<Option target="SurfaceSampling"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/Tools/VolumeSampling/main.cpp">
+			<Option target="VolumeSampling"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/Tools/partio2vtk/main.cpp">
+			<Option target="partio2vtk"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/Utilities/BinaryFileReaderWriter.h">
+			<Option target="Utilities"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/Utilities/Counting.h">
+			<Option target="Utilities"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/Utilities/FileSystem.h">
+			<Option target="Utilities"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/Utilities/Logger.h">
+			<Option target="Utilities"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/Utilities/OBJLoader.h">
+			<Option target="Utilities"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/Utilities/PartioReaderWriter.cpp">
+			<Option target="Utilities"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/Utilities/PartioReaderWriter.h">
+			<Option target="Utilities"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/Utilities/StringTools.h">
+			<Option target="Utilities"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/Utilities/SystemInfo.h">
+			<Option target="Utilities"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/Utilities/Timing.h">
+			<Option target="Utilities"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/Utilities/Version.h">
+			<Option target="Utilities"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/extern/AntTweakBar/include/AntTweakBar.h">
+			<Option target="AntTweakBar"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/extern/AntTweakBar/src/AntPerfTimer.h">
+			<Option target="AntTweakBar"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/extern/AntTweakBar/src/LoadOGL.cpp">
+			<Option target="AntTweakBar"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/extern/AntTweakBar/src/LoadOGL.h">
+			<Option target="AntTweakBar"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/extern/AntTweakBar/src/LoadOGLCore.cpp">
+			<Option target="AntTweakBar"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/extern/AntTweakBar/src/LoadOGLCore.h">
+			<Option target="AntTweakBar"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/extern/AntTweakBar/src/MiniGLFW.h">
+			<Option target="AntTweakBar"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/extern/AntTweakBar/src/MiniGLUT.h">
+			<Option target="AntTweakBar"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/extern/AntTweakBar/src/MiniSDL12.h">
+			<Option target="AntTweakBar"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/extern/AntTweakBar/src/MiniSDL13.h">
+			<Option target="AntTweakBar"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/extern/AntTweakBar/src/MiniSFML16.h">
+			<Option target="AntTweakBar"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/extern/AntTweakBar/src/TwBar.cpp">
+			<Option target="AntTweakBar"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/extern/AntTweakBar/src/TwBar.h">
+			<Option target="AntTweakBar"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/extern/AntTweakBar/src/TwColors.cpp">
+			<Option target="AntTweakBar"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/extern/AntTweakBar/src/TwColors.h">
+			<Option target="AntTweakBar"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/extern/AntTweakBar/src/TwEventGLFW.c">
+			<Option target="AntTweakBar"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/extern/AntTweakBar/src/TwEventGLUT.c">
+			<Option target="AntTweakBar"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/extern/AntTweakBar/src/TwEventSDL.c">
+			<Option target="AntTweakBar"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/extern/AntTweakBar/src/TwEventSDL12.c">
+			<Option target="AntTweakBar"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/extern/AntTweakBar/src/TwEventSDL13.c">
+			<Option target="AntTweakBar"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/extern/AntTweakBar/src/TwEventSFML.cpp">
+			<Option target="AntTweakBar"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/extern/AntTweakBar/src/TwFonts.cpp">
+			<Option target="AntTweakBar"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/extern/AntTweakBar/src/TwFonts.h">
+			<Option target="AntTweakBar"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/extern/AntTweakBar/src/TwGraph.h">
+			<Option target="AntTweakBar"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/extern/AntTweakBar/src/TwMgr.cpp">
+			<Option target="AntTweakBar"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/extern/AntTweakBar/src/TwMgr.h">
+			<Option target="AntTweakBar"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/extern/AntTweakBar/src/TwOpenGL.cpp">
+			<Option target="AntTweakBar"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/extern/AntTweakBar/src/TwOpenGL.h">
+			<Option target="AntTweakBar"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/extern/AntTweakBar/src/TwOpenGLCore.cpp">
+			<Option target="AntTweakBar"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/extern/AntTweakBar/src/TwOpenGLCore.h">
+			<Option target="AntTweakBar"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/extern/AntTweakBar/src/TwPrecomp.cpp">
+			<Option target="AntTweakBar"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/extern/AntTweakBar/src/TwPrecomp.h">
+			<Option target="AntTweakBar"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/extern/glew/include/GL/glew.h">
+			<Option target="glew"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/extern/glew/include/GL/glxew.h">
+			<Option target="glew"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/extern/glew/include/GL/wglew.h">
+			<Option target="glew"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/extern/glew/src/glew.c">
+			<Option target="glew"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/extern/md5/md5.cpp">
+			<Option target="MD5"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/extern/md5/md5.h">
+			<Option target="MD5"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/extern/partio/src/lib/core/Particle.cpp">
+			<Option target="partio"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/extern/partio/src/lib/core/ParticleCaching.cpp">
+			<Option target="partio"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/extern/partio/src/lib/core/ParticleCaching.h">
+			<Option target="partio"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/extern/partio/src/lib/core/ParticleHeaders.cpp">
+			<Option target="partio"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/extern/partio/src/lib/core/ParticleHeaders.h">
+			<Option target="partio"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/extern/partio/src/lib/core/ParticleSimple.cpp">
+			<Option target="partio"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/extern/partio/src/lib/core/ParticleSimple.h">
+			<Option target="partio"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/extern/partio/src/lib/core/ParticleSimpleInterleave.cpp">
+			<Option target="partio"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/extern/partio/src/lib/core/ParticleSimpleInterleave.h">
+			<Option target="partio"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/extern/partio/src/lib/io/BGEO.cpp">
+			<Option target="partio"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/extern/partio/src/lib/io/BIN.cpp">
+			<Option target="partio"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/extern/partio/src/lib/io/GEO.cpp">
+			<Option target="partio"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/extern/partio/src/lib/io/MC.cpp">
+			<Option target="partio"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/extern/partio/src/lib/io/PDA.cpp">
+			<Option target="partio"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/extern/partio/src/lib/io/PDB.cpp">
+			<Option target="partio"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/extern/partio/src/lib/io/PDC.cpp">
+			<Option target="partio"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/extern/partio/src/lib/io/PRT.cpp">
+			<Option target="partio"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/extern/partio/src/lib/io/PTC.cpp">
+			<Option target="partio"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/extern/partio/src/lib/io/PTS.cpp">
+			<Option target="partio"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/extern/partio/src/lib/io/ParticleIO.cpp">
+			<Option target="partio"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/extern/partio/src/lib/io/RIB.cpp">
+			<Option target="partio"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/extern/partio/src/lib/io/ZIP.cpp">
+			<Option target="partio"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/extern/partio/src/lib/io/ZIP.h">
+			<Option target="partio"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/extern/tinyexpr/tinyexpr.c">
+			<Option target="tinyexpr"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/extern/tinyexpr/tinyexpr.h">
+			<Option target="tinyexpr"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/extern/toojpeg/toojpeg.cpp">
+			<Option target="PartioViewer"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/extern/toojpeg/toojpeg.h">
+			<Option target="PartioViewer"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/extern/zlib/src/adler32.c">
+			<Option target="zlib"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/extern/zlib/src/compress.c">
+			<Option target="zlib"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/extern/zlib/src/crc32.c">
+			<Option target="zlib"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/extern/zlib/src/crc32.h">
+			<Option target="zlib"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/extern/zlib/src/deflate.c">
+			<Option target="zlib"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/extern/zlib/src/deflate.h">
+			<Option target="zlib"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/extern/zlib/src/gzio.c">
+			<Option target="zlib"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/extern/zlib/src/infback.c">
+			<Option target="zlib"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/extern/zlib/src/inffast.c">
+			<Option target="zlib"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/extern/zlib/src/inffast.h">
+			<Option target="zlib"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/extern/zlib/src/inffixed.h">
+			<Option target="zlib"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/extern/zlib/src/inflate.c">
+			<Option target="zlib"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/extern/zlib/src/inflate.h">
+			<Option target="zlib"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/extern/zlib/src/inftrees.c">
+			<Option target="zlib"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/extern/zlib/src/inftrees.h">
+			<Option target="zlib"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/extern/zlib/src/trees.c">
+			<Option target="zlib"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/extern/zlib/src/trees.h">
+			<Option target="zlib"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/extern/zlib/src/uncompr.c">
+			<Option target="zlib"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/extern/zlib/src/zconf.h">
+			<Option target="zlib"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/extern/zlib/src/zlib.h">
+			<Option target="zlib"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/extern/zlib/src/zutil.c">
+			<Option target="zlib"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/extern/zlib/src/zutil.h">
+			<Option target="zlib"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/CMake/Common.cmake">
+			<Option virtualFolder="CMake Files\CMake\"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/CMake/DataCopyTargets.cmake">
+			<Option virtualFolder="CMake Files\CMake\"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/CMake/FindEigen3.cmake">
+			<Option virtualFolder="CMake Files\CMake\"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/CMake/GetGitRevisionDescription.cmake">
+			<Option virtualFolder="CMake Files\CMake\"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/CMake/NeighborhoodSearch.cmake">
+			<Option virtualFolder="CMake Files\CMake\"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/CMake/SetUpExternalProjects.cmake">
+			<Option virtualFolder="CMake Files\CMake\"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/../.local/lib/cmake/gazebo/gazebo-config-version.cmake">
+			<Option virtualFolder="CMake Files\..\.local\lib\cmake\gazebo\"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/../.local/lib/cmake/gazebo/gazebo-config.cmake">
+			<Option virtualFolder="CMake Files\..\.local\lib\cmake\gazebo\"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/../../../usr/lib/x86_64-linux-gnu/cmake/simbody/SimbodyConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\simbody\"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/../../../usr/lib/x86_64-linux-gnu/cmake/simbody/SimbodyConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\simbody\"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/../../../usr/lib/x86_64-linux-gnu/cmake/sdformat/SDFormatConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\sdformat\"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/../../../usr/lib/x86_64-linux-gnu/cmake/sdformat/SDFormatConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\sdformat\"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/../../../usr/lib/x86_64-linux-gnu/cmake/ignition-math4/ignition-math4-config-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\ignition-math4\"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/../../../usr/lib/x86_64-linux-gnu/cmake/ignition-math4/ignition-math4-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\ignition-math4\"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/../../../usr/lib/x86_64-linux-gnu/cmake/ignition-math4/ignition-math4-targets-relwithdebinfo.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\ignition-math4\"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/../../../usr/lib/x86_64-linux-gnu/cmake/ignition-math4/ignition-math4-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\ignition-math4\"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/../../../usr/lib/x86_64-linux-gnu/cmake/ignition-cmake0/ignition-cmake0-config-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\ignition-cmake0\"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/../../../usr/lib/x86_64-linux-gnu/cmake/ignition-cmake0/ignition-cmake0-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\ignition-cmake0\"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/../../../usr/lib/x86_64-linux-gnu/cmake/ignition-cmake0/cmake0/FindAVCODEC.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\ignition-cmake0\cmake0\"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/../../../usr/lib/x86_64-linux-gnu/cmake/ignition-cmake0/cmake0/FindAVDEVICE.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\ignition-cmake0\cmake0\"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/../../../usr/lib/x86_64-linux-gnu/cmake/ignition-cmake0/cmake0/FindAVFORMAT.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\ignition-cmake0\cmake0\"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/../../../usr/lib/x86_64-linux-gnu/cmake/ignition-cmake0/cmake0/FindAVUTIL.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\ignition-cmake0\cmake0\"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/../../../usr/lib/x86_64-linux-gnu/cmake/ignition-cmake0/cmake0/FindCPPZMQ.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\ignition-cmake0\cmake0\"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/../../../usr/lib/x86_64-linux-gnu/cmake/ignition-cmake0/cmake0/FindDL.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\ignition-cmake0\cmake0\"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/../../../usr/lib/x86_64-linux-gnu/cmake/ignition-cmake0/cmake0/FindFreeImage.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\ignition-cmake0\cmake0\"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/../../../usr/lib/x86_64-linux-gnu/cmake/ignition-cmake0/cmake0/FindGTS.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\ignition-cmake0\cmake0\"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/../../../usr/lib/x86_64-linux-gnu/cmake/ignition-cmake0/cmake0/FindIgnCURL.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\ignition-cmake0\cmake0\"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/../../../usr/lib/x86_64-linux-gnu/cmake/ignition-cmake0/cmake0/FindIgnProtobuf.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\ignition-cmake0\cmake0\"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/../../../usr/lib/x86_64-linux-gnu/cmake/ignition-cmake0/cmake0/FindJSONCPP.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\ignition-cmake0\cmake0\"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/../../../usr/lib/x86_64-linux-gnu/cmake/ignition-cmake0/cmake0/FindSWSCALE.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\ignition-cmake0\cmake0\"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/../../../usr/lib/x86_64-linux-gnu/cmake/ignition-cmake0/cmake0/FindTINYXML2.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\ignition-cmake0\cmake0\"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/../../../usr/lib/x86_64-linux-gnu/cmake/ignition-cmake0/cmake0/FindUUID.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\ignition-cmake0\cmake0\"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/../../../usr/lib/x86_64-linux-gnu/cmake/ignition-cmake0/cmake0/FindYAML.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\ignition-cmake0\cmake0\"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/../../../usr/lib/x86_64-linux-gnu/cmake/ignition-cmake0/cmake0/FindZIP.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\ignition-cmake0\cmake0\"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/../../../usr/lib/x86_64-linux-gnu/cmake/ignition-cmake0/cmake0/FindZeroMQ.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\ignition-cmake0\cmake0\"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/../../../usr/lib/x86_64-linux-gnu/cmake/ignition-cmake0/cmake0/IgnCMake.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\ignition-cmake0\cmake0\"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/../../../usr/lib/x86_64-linux-gnu/cmake/ignition-cmake0/cmake0/IgnConfigureBuild.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\ignition-cmake0\cmake0\"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/../../../usr/lib/x86_64-linux-gnu/cmake/ignition-cmake0/cmake0/IgnConfigureProject.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\ignition-cmake0\cmake0\"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/../../../usr/lib/x86_64-linux-gnu/cmake/ignition-cmake0/cmake0/IgnCreateDocs.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\ignition-cmake0\cmake0\"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/../../../usr/lib/x86_64-linux-gnu/cmake/ignition-cmake0/cmake0/IgnImportTarget.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\ignition-cmake0\cmake0\"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/../../../usr/lib/x86_64-linux-gnu/cmake/ignition-cmake0/cmake0/IgnPackaging.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\ignition-cmake0\cmake0\"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/../../../usr/lib/x86_64-linux-gnu/cmake/ignition-cmake0/cmake0/IgnPkgConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\ignition-cmake0\cmake0\"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/../../../usr/lib/x86_64-linux-gnu/cmake/ignition-cmake0/cmake0/IgnSetCompilerFlags.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\ignition-cmake0\cmake0\"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/../../../usr/lib/x86_64-linux-gnu/cmake/ignition-cmake0/cmake0/IgnUtils.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\ignition-cmake0\cmake0\"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/../../../usr/lib/x86_64-linux-gnu/cmake/ignition-transport4/ignition-transport4-config-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\ignition-transport4\"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/../../../usr/lib/x86_64-linux-gnu/cmake/ignition-transport4/ignition-transport4-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\ignition-transport4\"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/../../../usr/lib/x86_64-linux-gnu/cmake/ignition-transport4/ignition-transport4-targets-relwithdebinfo.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\ignition-transport4\"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/../../../usr/lib/x86_64-linux-gnu/cmake/ignition-transport4/ignition-transport4-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\ignition-transport4\"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/../../../usr/lib/x86_64-linux-gnu/cmake/ignition-msgs1/ignition-msgs1-config-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\ignition-msgs1\"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/../../../usr/lib/x86_64-linux-gnu/cmake/ignition-msgs1/ignition-msgs1-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\ignition-msgs1\"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/../../../usr/lib/x86_64-linux-gnu/cmake/ignition-msgs1/ignition-msgs1-targets-relwithdebinfo.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\ignition-msgs1\"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/../../../usr/lib/x86_64-linux-gnu/cmake/ignition-msgs1/ignition-msgs1-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\ignition-msgs1\"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/../../../usr/lib/x86_64-linux-gnu/cmake/ignition-common1/ignition-common1-config-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\ignition-common1\"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/../../../usr/lib/x86_64-linux-gnu/cmake/ignition-common1/ignition-common1-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\ignition-common1\"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/../../../usr/lib/x86_64-linux-gnu/cmake/ignition-common1/ignition-common1-targets-relwithdebinfo.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\ignition-common1\"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/../../../usr/lib/x86_64-linux-gnu/cmake/ignition-common1/ignition-common1-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\ignition-common1\"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/../../../usr/lib/x86_64-linux-gnu/cmake/ignition-fuel_tools1/ignition-fuel_tools1-config-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\ignition-fuel_tools1\"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/../../../usr/lib/x86_64-linux-gnu/cmake/ignition-fuel_tools1/ignition-fuel_tools1-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\ignition-fuel_tools1\"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/../../../usr/lib/x86_64-linux-gnu/cmake/ignition-fuel_tools1/ignition-fuel_tools1-targets-relwithdebinfo.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\ignition-fuel_tools1\"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/../../../usr/lib/x86_64-linux-gnu/cmake/ignition-fuel_tools1/ignition-fuel_tools1-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\ignition-fuel_tools1\"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/../../../usr/lib/x86_64-linux-gnu/cmake/jsoncpp/jsoncppConfig-none.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\jsoncpp\"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/../../../usr/lib/x86_64-linux-gnu/cmake/jsoncpp/jsoncppConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\jsoncpp\"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/../../../usr/share/OGRE/cmake/modules/FindOGRE.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\share\OGRE\cmake\modules\"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/../../../usr/share/OGRE/cmake/modules/FindPkgMacros.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\share\OGRE\cmake\modules\"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/../../../usr/share/OGRE/cmake/modules/PreprocessorUtils.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\share\OGRE\cmake\modules\"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/cmake-build-debug/extern/CompactNSearch/tmp/Ext_NeighborhoodSearch-cfgcmd.txt.in">
+			<Option virtualFolder="CMake Files\cmake-build-debug\extern\CompactNSearch\tmp\"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/cmake-build-debug/extern/Discregrid/tmp/Ext_Discregrid-cfgcmd.txt.in">
+			<Option virtualFolder="CMake Files\cmake-build-debug\extern\Discregrid\tmp\"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/cmake-build-debug/extern/GenericParameters/tmp/Ext_GenericParameters-cfgcmd.txt.in">
+			<Option virtualFolder="CMake Files\cmake-build-debug\extern\GenericParameters\tmp\"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/cmake-build-debug/extern/PositionBasedDynamics/tmp/Ext_PBD-cfgcmd.txt.in">
+			<Option virtualFolder="CMake Files\cmake-build-debug\extern\PositionBasedDynamics\tmp\"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/extern/zlib/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\extern\zlib\"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/extern/partio/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\extern\partio\"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/extern/partio/src/lib/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\extern\partio\src\lib\"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/extern/md5/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\extern\md5\"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/extern/tinyexpr/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\extern\tinyexpr\"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/extern/AntTweakBar/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\extern\AntTweakBar\"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/extern/glew/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\extern\glew\"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/SPlisHSPlasH/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\SPlisHSPlasH\"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/Utilities/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Utilities\"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/Utilities/Version.h.in">
+			<Option virtualFolder="CMake Files\Utilities\"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/Tools/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Tools\"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/Tools/PartioViewer/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Tools\PartioViewer\"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/Tools/SurfaceSampling/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Tools\SurfaceSampling\"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/Tools/VolumeSampling/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Tools\VolumeSampling\"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/Tools/partio2vtk/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Tools\partio2vtk\"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/GUI/OpenGL/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\GUI\OpenGL\"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/GUI/TweakBar/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\GUI\TweakBar\"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/Simulator/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Simulator\"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/Simulator/GazeboWrapper/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Simulator\GazeboWrapper\"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/Tests/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Tests\"/>
+		</Unit>
+		<Unit filename="/home/jason/splisplash/Tests/Kernel/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Tests\Kernel\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
