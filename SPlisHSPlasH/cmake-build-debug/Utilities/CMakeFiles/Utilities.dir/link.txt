@@ -1,2 +1,0 @@
-/usr/bin/ar qc ../lib/libUtilities_d.a  CMakeFiles/Utilities.dir/PartioReaderWriter.cpp.o
-/usr/bin/ranlib ../lib/libUtilities_d.a

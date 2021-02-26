@@ -1,2 +1,0 @@
-/usr/bin/ar qc ../../lib/libtinyexpr_d.a  CMakeFiles/tinyexpr.dir/tinyexpr.c.o
-/usr/bin/ranlib ../../lib/libtinyexpr_d.a

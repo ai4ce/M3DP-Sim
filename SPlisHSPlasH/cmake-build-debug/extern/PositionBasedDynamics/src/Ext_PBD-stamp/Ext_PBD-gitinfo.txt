@@ -1,3 +1,0 @@
-repository='https://github.com/InteractiveComputerGraphics/PositionBasedDynamics.git'
-module=''
-tag='origin'
