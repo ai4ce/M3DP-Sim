@@ -1,0 +1,1 @@
+/usr/bin/cc -fPIC  -fopenmp -g  -shared -Wl,-soname,libglew_d.so -o ../../lib/libglew_d.so CMakeFiles/glew.dir/src/glew.c.o 

@@ -1,0 +1,5 @@
+/home/jason/splisplash/build/extern/install/NeighborhoodSearch/include/PointSet.h
+/home/jason/splisplash/build/extern/install/NeighborhoodSearch/include/ActivationTable.h
+/home/jason/splisplash/build/extern/install/NeighborhoodSearch/include/Common.h
+/home/jason/splisplash/build/extern/install/NeighborhoodSearch/include/cuNSearch.h
+/home/jason/splisplash/build/extern/install/NeighborhoodSearch/lib/libcuNSearch.a

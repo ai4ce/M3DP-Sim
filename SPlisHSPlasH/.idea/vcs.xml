@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$/build/extern/CompactNSearch/src/Ext_NeighborhoodSearch" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/build/extern/Discregrid/src/Ext_Discregrid" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/build/extern/GenericParameters/src/Ext_GenericParameters" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/build/extern/PositionBasedDynamics/src/Ext_PBD" vcs="Git" />
+  </component>
+</project>

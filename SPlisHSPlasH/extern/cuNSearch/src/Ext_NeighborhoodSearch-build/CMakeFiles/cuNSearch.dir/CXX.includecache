@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/jason/splisplash/extern/cuNSearch/src/Ext_NeighborhoodSearch/Utils/IDFactory.cpp
+IDFactory.h
+/home/jason/splisplash/extern/cuNSearch/src/Ext_NeighborhoodSearch/Utils/IDFactory.h
+
+/home/jason/splisplash/extern/cuNSearch/src/Ext_NeighborhoodSearch/Utils/IDFactory.h
+
+/home/jason/splisplash/extern/cuNSearch/src/Ext_NeighborhoodSearch/Utils/Timing.cpp
+Timing.h
+/home/jason/splisplash/extern/cuNSearch/src/Ext_NeighborhoodSearch/Utils/Timing.h
+
+/home/jason/splisplash/extern/cuNSearch/src/Ext_NeighborhoodSearch/Utils/Timing.h
+iostream
+-
+stack
+-
+unordered_map
+-
+chrono
+-
+IDFactory.h
+/home/jason/splisplash/extern/cuNSearch/src/Ext_NeighborhoodSearch/Utils/IDFactory.h
+

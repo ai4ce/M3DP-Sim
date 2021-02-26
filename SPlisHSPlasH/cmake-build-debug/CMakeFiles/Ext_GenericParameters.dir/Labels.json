@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/jason/splisplash/cmake-build-debug/CMakeFiles/Ext_GenericParameters"
+		},
+		{
+			"file" : "/home/jason/splisplash/cmake-build-debug/CMakeFiles/Ext_GenericParameters.rule"
+		},
+		{
+			"file" : "/home/jason/splisplash/cmake-build-debug/CMakeFiles/Ext_GenericParameters-complete.rule"
+		},
+		{
+			"file" : "/home/jason/splisplash/cmake-build-debug/extern/GenericParameters/src/Ext_GenericParameters-stamp/Ext_GenericParameters-install.rule"
+		},
+		{
+			"file" : "/home/jason/splisplash/cmake-build-debug/extern/GenericParameters/src/Ext_GenericParameters-stamp/Ext_GenericParameters-mkdir.rule"
+		},
+		{
+			"file" : "/home/jason/splisplash/cmake-build-debug/extern/GenericParameters/src/Ext_GenericParameters-stamp/Ext_GenericParameters-download.rule"
+		},
+		{
+			"file" : "/home/jason/splisplash/cmake-build-debug/extern/GenericParameters/src/Ext_GenericParameters-stamp/Ext_GenericParameters-update.rule"
+		},
+		{
+			"file" : "/home/jason/splisplash/cmake-build-debug/extern/GenericParameters/src/Ext_GenericParameters-stamp/Ext_GenericParameters-patch.rule"
+		},
+		{
+			"file" : "/home/jason/splisplash/cmake-build-debug/extern/GenericParameters/src/Ext_GenericParameters-stamp/Ext_GenericParameters-configure.rule"
+		},
+		{
+			"file" : "/home/jason/splisplash/cmake-build-debug/extern/GenericParameters/src/Ext_GenericParameters-stamp/Ext_GenericParameters-build.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"Ext_GenericParameters"
+		],
+		"name" : "Ext_GenericParameters"
+	}
+}

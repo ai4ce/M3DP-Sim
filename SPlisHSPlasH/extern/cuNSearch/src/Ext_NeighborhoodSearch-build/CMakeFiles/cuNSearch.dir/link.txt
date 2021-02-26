@@ -1,0 +1,2 @@
+/usr/bin/ar qc libcuNSearch.a CMakeFiles/cuNSearch.dir/src/PointSet.cu.o CMakeFiles/cuNSearch.dir/src/PointSetImplementation.cu.o CMakeFiles/cuNSearch.dir/src/cuNSearch.cu.o CMakeFiles/cuNSearch.dir/src/cuNSearchDeviceData.cu.o CMakeFiles/cuNSearch.dir/src/cuNSearchKernels.cu.o CMakeFiles/cuNSearch.dir/Utils/cuda_helper.cu.o CMakeFiles/cuNSearch.dir/Utils/Timing.cpp.o CMakeFiles/cuNSearch.dir/Utils/IDFactory.cpp.o
+/usr/bin/ranlib libcuNSearch.a

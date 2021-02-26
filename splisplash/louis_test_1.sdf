@@ -1,0 +1,14 @@
+<?xml version='1.0'?>
+<sdf version ='1.6'>
+<model name='my_mesh'>
+<static>true</static>
+<link name='body'>
+<pose>0.018757-0.1331520000</pose>
+<visual name='visual'>
+<geometry>
+<mesh><uri>/home/uljad1b/fluid-engine-dev/build/bin/hybrid_liquid_sim_output/louis_test_1.obj</uri></mesh>
+</geometry>
+</visual>
+</link>
+</model>
+</sdf>

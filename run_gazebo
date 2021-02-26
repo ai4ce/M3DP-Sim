@@ -1,0 +1,3 @@
+gazebo --verbose fluid_world_emitter.sdf -g libGazeboFluidVisualizer.so -u
+
+gazebo --verbose fluid_world_ulEm.sdf -g libGazeboFluidVisualizer.so

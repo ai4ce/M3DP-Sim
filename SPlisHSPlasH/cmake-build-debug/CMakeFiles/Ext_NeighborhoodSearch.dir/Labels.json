@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/jason/splisplash/cmake-build-debug/CMakeFiles/Ext_NeighborhoodSearch"
+		},
+		{
+			"file" : "/home/jason/splisplash/cmake-build-debug/CMakeFiles/Ext_NeighborhoodSearch.rule"
+		},
+		{
+			"file" : "/home/jason/splisplash/cmake-build-debug/CMakeFiles/Ext_NeighborhoodSearch-complete.rule"
+		},
+		{
+			"file" : "/home/jason/splisplash/cmake-build-debug/extern/CompactNSearch/src/Ext_NeighborhoodSearch-stamp/Ext_NeighborhoodSearch-install.rule"
+		},
+		{
+			"file" : "/home/jason/splisplash/cmake-build-debug/extern/CompactNSearch/src/Ext_NeighborhoodSearch-stamp/Ext_NeighborhoodSearch-mkdir.rule"
+		},
+		{
+			"file" : "/home/jason/splisplash/cmake-build-debug/extern/CompactNSearch/src/Ext_NeighborhoodSearch-stamp/Ext_NeighborhoodSearch-download.rule"
+		},
+		{
+			"file" : "/home/jason/splisplash/cmake-build-debug/extern/CompactNSearch/src/Ext_NeighborhoodSearch-stamp/Ext_NeighborhoodSearch-update.rule"
+		},
+		{
+			"file" : "/home/jason/splisplash/cmake-build-debug/extern/CompactNSearch/src/Ext_NeighborhoodSearch-stamp/Ext_NeighborhoodSearch-patch.rule"
+		},
+		{
+			"file" : "/home/jason/splisplash/cmake-build-debug/extern/CompactNSearch/src/Ext_NeighborhoodSearch-stamp/Ext_NeighborhoodSearch-configure.rule"
+		},
+		{
+			"file" : "/home/jason/splisplash/cmake-build-debug/extern/CompactNSearch/src/Ext_NeighborhoodSearch-stamp/Ext_NeighborhoodSearch-build.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"Ext_NeighborhoodSearch"
+		],
+		"name" : "Ext_NeighborhoodSearch"
+	}
+}

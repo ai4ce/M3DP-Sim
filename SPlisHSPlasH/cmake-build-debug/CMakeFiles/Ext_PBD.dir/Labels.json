@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/jason/splisplash/cmake-build-debug/CMakeFiles/Ext_PBD"
+		},
+		{
+			"file" : "/home/jason/splisplash/cmake-build-debug/CMakeFiles/Ext_PBD.rule"
+		},
+		{
+			"file" : "/home/jason/splisplash/cmake-build-debug/CMakeFiles/Ext_PBD-complete.rule"
+		},
+		{
+			"file" : "/home/jason/splisplash/cmake-build-debug/extern/PositionBasedDynamics/src/Ext_PBD-stamp/Ext_PBD-install.rule"
+		},
+		{
+			"file" : "/home/jason/splisplash/cmake-build-debug/extern/PositionBasedDynamics/src/Ext_PBD-stamp/Ext_PBD-mkdir.rule"
+		},
+		{
+			"file" : "/home/jason/splisplash/cmake-build-debug/extern/PositionBasedDynamics/src/Ext_PBD-stamp/Ext_PBD-download.rule"
+		},
+		{
+			"file" : "/home/jason/splisplash/cmake-build-debug/extern/PositionBasedDynamics/src/Ext_PBD-stamp/Ext_PBD-update.rule"
+		},
+		{
+			"file" : "/home/jason/splisplash/cmake-build-debug/extern/PositionBasedDynamics/src/Ext_PBD-stamp/Ext_PBD-patch.rule"
+		},
+		{
+			"file" : "/home/jason/splisplash/cmake-build-debug/extern/PositionBasedDynamics/src/Ext_PBD-stamp/Ext_PBD-configure.rule"
+		},
+		{
+			"file" : "/home/jason/splisplash/cmake-build-debug/extern/PositionBasedDynamics/src/Ext_PBD-stamp/Ext_PBD-build.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"Ext_PBD"
+		],
+		"name" : "Ext_PBD"
+	}
+}
