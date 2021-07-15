@@ -70,6 +70,59 @@
 
     </model>
 
+    <model name="box">
+      <static>1</static>
+      <link name="link">
+        <visual name="visual">
+          <cast_shadows>0</cast_shadows>
+          <pose frame="">0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://empty_world/meshes/emptyworldground.dae</uri>
+              <scale>3 3 3</scale>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name="collision">
+          <pose frame="">0 0 0.016 0 -0 0</pose>
+
+           <surface>
+          <contact>
+             <collide_bitmask>0x01</collide_bitmask>
+          </contact>
+          <friction>
+            <ode>
+              <mu>10000</mu>
+              <mu2>50</mu2>
+            </ode>
+          </friction>
+        </surface>
+          <geometry>
+            <box>
+              <size>1 1 1</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+
+    </model>
+
 <model name="modelName"> 
 	<static>0</static>
 	<pose>0 0 0.25</pose>
