@@ -235,7 +235,7 @@
 
   <model name="box">
   <pose>0.5 0.5 0.1 0 0 0</pose>
-  <static>false</static>
+  <static>true</static>
     <link name="link">
       <inertial>
         <mass>4.0</mass>
@@ -273,6 +273,12 @@
             <size>0.2 0.2 0.2</size>
           </box>
         </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Black</name>
+          </script>
+        </material>
       </visual>
     </link>
 
