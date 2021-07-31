@@ -1,4 +1,4 @@
-# Gazebo3DPrintingSimulator
+# M3DP-sim
 
 To use this simulation tool (Tested on Ubuntu version 18.04 and 20.04) follow these instructions :
 
