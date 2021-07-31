@@ -144,7 +144,6 @@
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add option="-DUSE_AVX"/>
 					<Add directory="/home/jason/splisplash/extern/zlib/src"/>
 					<Add directory="/usr/include/c++/7"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
@@ -169,7 +168,6 @@
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add option="-DUSE_AVX"/>
 					<Add directory="/home/jason/splisplash/extern/zlib/src"/>
 					<Add directory="/usr/include/c++/7"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
@@ -194,7 +192,6 @@
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add option="-DUSE_AVX"/>
 					<Add option="-DPARTIO_USE_ZLIB"/>
 					<Add directory="/home/jason/splisplash/extern/partio/../zlib/src"/>
 					<Add directory="/usr/include/c++/7"/>
@@ -220,7 +217,6 @@
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add option="-DUSE_AVX"/>
 					<Add option="-DPARTIO_USE_ZLIB"/>
 					<Add directory="/home/jason/splisplash/extern/partio/../zlib/src"/>
 					<Add directory="/usr/include/c++/7"/>
@@ -246,7 +242,6 @@
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add option="-DUSE_AVX"/>
 					<Add directory="/usr/include/c++/7"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
 					<Add directory="/usr/include/c++/7/backward"/>
@@ -270,7 +265,6 @@
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add option="-DUSE_AVX"/>
 					<Add directory="/usr/include/c++/7"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
 					<Add directory="/usr/include/c++/7/backward"/>
@@ -294,7 +288,6 @@
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add option="-DUSE_AVX"/>
 					<Add directory="/usr/include/c++/7"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
 					<Add directory="/usr/include/c++/7/backward"/>
@@ -318,7 +311,6 @@
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add option="-DUSE_AVX"/>
 					<Add directory="/usr/include/c++/7"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
 					<Add directory="/usr/include/c++/7/backward"/>
@@ -342,7 +334,6 @@
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add option="-DUSE_AVX"/>
 					<Add option="-DTW_EXPORTS"/>
 					<Add option="-DTW_STATIC"/>
 					<Add option="-D_UNIX"/>
@@ -371,7 +362,6 @@
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add option="-DUSE_AVX"/>
 					<Add option="-DTW_EXPORTS"/>
 					<Add option="-DTW_STATIC"/>
 					<Add option="-D_UNIX"/>
@@ -402,7 +392,6 @@
 				<Compiler>
 					<Add option="-DGLEW_NO_GLU"/>
 					<Add option="-DGLEW_BUILD"/>
-					<Add option="-DUSE_AVX"/>
 					<Add directory="/home/jason/splisplash/extern/glew/include"/>
 					<Add directory="/usr/include/c++/7"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
@@ -429,7 +418,6 @@
 				<Compiler>
 					<Add option="-DGLEW_NO_GLU"/>
 					<Add option="-DGLEW_BUILD"/>
-					<Add option="-DUSE_AVX"/>
 					<Add directory="/home/jason/splisplash/extern/glew/include"/>
 					<Add directory="/usr/include/c++/7"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
@@ -454,7 +442,6 @@
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add option="-DUSE_AVX"/>
 					<Add option="-DLIBBULLET_VERSION=2.87"/>
 					<Add option="-DLIBBULLET_VERSION_GT_282"/>
 					<Add directory="/home/jason/.local/include"/>
@@ -499,7 +486,6 @@
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add option="-DUSE_AVX"/>
 					<Add option="-DLIBBULLET_VERSION=2.87"/>
 					<Add option="-DLIBBULLET_VERSION_GT_282"/>
 					<Add directory="/home/jason/.local/include"/>
@@ -544,7 +530,6 @@
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add option="-DUSE_AVX"/>
 					<Add option="-DLIBBULLET_VERSION=2.87"/>
 					<Add option="-DLIBBULLET_VERSION_GT_282"/>
 					<Add directory="/home/jason/.local/include"/>
@@ -585,7 +570,6 @@
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add option="-DUSE_AVX"/>
 					<Add option="-DLIBBULLET_VERSION=2.87"/>
 					<Add option="-DLIBBULLET_VERSION_GT_282"/>
 					<Add directory="/home/jason/.local/include"/>
@@ -629,7 +613,6 @@
 					<Add option="-DTW_NO_LIB_PRAGMA"/>
 					<Add option="-DTW_STATIC"/>
 					<Add option="-DSPH_DATA_PATH=&quot;../data&quot;"/>
-					<Add option="-DUSE_AVX"/>
 					<Add option="-DLIBBULLET_VERSION=2.87"/>
 					<Add option="-DLIBBULLET_VERSION_GT_282"/>
 					<Add directory="/home/jason/.local/include"/>
@@ -678,7 +661,6 @@
 					<Add option="-DTW_NO_LIB_PRAGMA"/>
 					<Add option="-DTW_STATIC"/>
 					<Add option="-DSPH_DATA_PATH=&quot;../data&quot;"/>
-					<Add option="-DUSE_AVX"/>
 					<Add option="-DLIBBULLET_VERSION=2.87"/>
 					<Add option="-DLIBBULLET_VERSION_GT_282"/>
 					<Add directory="/home/jason/.local/include"/>
@@ -724,7 +706,6 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add option="-DUSE_AVX"/>
 					<Add option="-DLIBBULLET_VERSION=2.87"/>
 					<Add option="-DLIBBULLET_VERSION_GT_282"/>
 					<Add directory="/home/jason/.local/include"/>
@@ -769,7 +750,6 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add option="-DUSE_AVX"/>
 					<Add option="-DLIBBULLET_VERSION=2.87"/>
 					<Add option="-DLIBBULLET_VERSION_GT_282"/>
 					<Add directory="/home/jason/.local/include"/>
@@ -814,7 +794,6 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add option="-DUSE_AVX"/>
 					<Add option="-DLIBBULLET_VERSION=2.87"/>
 					<Add option="-DLIBBULLET_VERSION_GT_282"/>
 					<Add directory="/home/jason/.local/include"/>
@@ -859,7 +838,6 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add option="-DUSE_AVX"/>
 					<Add option="-DLIBBULLET_VERSION=2.87"/>
 					<Add option="-DLIBBULLET_VERSION_GT_282"/>
 					<Add directory="/home/jason/.local/include"/>
@@ -905,7 +883,6 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add option="-DSPH_DATA_PATH=&quot;../data&quot;"/>
-					<Add option="-DUSE_AVX"/>
 					<Add option="-DLIBBULLET_VERSION=2.87"/>
 					<Add option="-DLIBBULLET_VERSION_GT_282"/>
 					<Add directory="/home/jason/.local/include"/>
@@ -951,7 +928,6 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add option="-DSPH_DATA_PATH=&quot;../data&quot;"/>
-					<Add option="-DUSE_AVX"/>
 					<Add option="-DLIBBULLET_VERSION=2.87"/>
 					<Add option="-DLIBBULLET_VERSION_GT_282"/>
 					<Add directory="/home/jason/.local/include"/>
@@ -996,7 +972,6 @@
 				<Option type="3"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add option="-DUSE_AVX"/>
 					<Add option="-DLIBBULLET_VERSION=2.87"/>
 					<Add option="-DLIBBULLET_VERSION_GT_282"/>
 					<Add option="-DTW_NO_LIB_PRAGMA"/>
@@ -1041,7 +1016,6 @@
 				<Option type="3"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add option="-DUSE_AVX"/>
 					<Add option="-DLIBBULLET_VERSION=2.87"/>
 					<Add option="-DLIBBULLET_VERSION_GT_282"/>
 					<Add option="-DTW_NO_LIB_PRAGMA"/>
@@ -1086,7 +1060,6 @@
 				<Option type="3"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add option="-DUSE_AVX"/>
 					<Add option="-DLIBBULLET_VERSION=2.87"/>
 					<Add option="-DLIBBULLET_VERSION_GT_282"/>
 					<Add option="-DTW_NO_LIB_PRAGMA"/>
@@ -1134,7 +1107,6 @@
 				<Option type="3"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add option="-DUSE_AVX"/>
 					<Add option="-DLIBBULLET_VERSION=2.87"/>
 					<Add option="-DLIBBULLET_VERSION_GT_282"/>
 					<Add option="-DTW_NO_LIB_PRAGMA"/>
@@ -1186,7 +1158,6 @@
 					<Add option="-DUSE_PBD"/>
 					<Add option="-DTW_NO_LIB_PRAGMA"/>
 					<Add option="-DTW_STATIC"/>
-					<Add option="-DUSE_AVX"/>
 					<Add option="-DLIBBULLET_VERSION=2.87"/>
 					<Add option="-DLIBBULLET_VERSION_GT_282"/>
 					<Add directory="/home/jason/.local/include"/>
@@ -1237,7 +1208,6 @@
 					<Add option="-DUSE_PBD"/>
 					<Add option="-DTW_NO_LIB_PRAGMA"/>
 					<Add option="-DTW_STATIC"/>
-					<Add option="-DUSE_AVX"/>
 					<Add option="-DLIBBULLET_VERSION=2.87"/>
 					<Add option="-DLIBBULLET_VERSION_GT_282"/>
 					<Add directory="/home/jason/.local/include"/>
@@ -1284,7 +1254,6 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add option="-DUSE_AVX"/>
 					<Add option="-DLIBBULLET_VERSION=2.87"/>
 					<Add option="-DLIBBULLET_VERSION_GT_282"/>
 					<Add directory="/home/jason/.local/include"/>
@@ -1330,7 +1299,6 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add option="-DUSE_AVX"/>
 					<Add option="-DLIBBULLET_VERSION=2.87"/>
 					<Add option="-DLIBBULLET_VERSION_GT_282"/>
 					<Add directory="/home/jason/.local/include"/>

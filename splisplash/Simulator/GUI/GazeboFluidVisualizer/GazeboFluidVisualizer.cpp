@@ -76,9 +76,9 @@ void FluidVisPlugin::RenderAsPointsUpdate()
 	if (this->newFluidMsgReceived)
 	{
 		// render fluid particles
-		//FluidVisPlugin::RenderParticlesAsEntities(this->fluidParticlePositions, "fluid1");
-		//FluidVisPlugin::RenderParticlesAsEntities(this->rigidsParticlePositions, "rigid1");
-		FluidVisPlugin::RenderParticles(this->fluidParticlePositions, "fluid1");
+		FluidVisPlugin::RenderParticlesAsEntities(this->fluidParticlePositions, "fluid1");
+		FluidVisPlugin::RenderParticlesAsEntities(this->rigidsParticlePositions, "rigid1");
+		//FluidVisPlugin::RenderParticles(this->fluidParticlePositions, "fluid1");
 		//FluidVisPlugin::RenderParticles(this->rigidsParticlePositions, "rigid1");
 		//	FluidVisPlugin::RenderParticlesAsEntities(this->rigidsParticlePositions, "rigid1");
 		this->newFluidMsgReceived = false;
@@ -118,6 +118,14 @@ void FluidVisPlugin::RenderParticles(std::vector<Ogre::Vector3> &_particles, std
 	Ogre::ManualObject *obj = NULL;
 	bool attached = false;
 
+	Ogre::MaterialPtr mMat = Ogre::MaterialManager::getSingleton().create("point1", "General", true);
+	Ogre::Technique* mTech = mMat->createTechnique();
+	Ogre::Pass* mPass = mTech->createPass();
+	mPass = mMat->getTechnique(0)->getPass(0);
+	mPass->setPointSize(20);
+ 	mPass->setDiffuse(1,0,0,1);
+
+
 	if (this->manager->hasManualObject(_name))
 	{
 		sceneNode = this->manager->getSceneNode(_name);
@@ -141,7 +149,8 @@ void FluidVisPlugin::RenderParticles(std::vector<Ogre::Vector3> &_particles, std
 	// OT_TRIANGLE_LIST = 4, A list of triangles, 3 vertices per triangle
 	// OT_TRIANGLE_STRIP = 5, A strip of triangles, 3 vertices for the first triangle, and 1 per triangle after that
 	// OT_TRIANGLE_FAN = 6, A fan of triangles, 3 vertices for the first triangle, and 1 per triangle after that
-	obj->begin("Gazebo/Black", Ogre::RenderOperation::OT_POINT_LIST);
+	//obj->begin("Gazebo/Black", Ogre::RenderOperation::OT_POINT_LIST);
+	obj->begin("point1", Ogre::RenderOperation::OT_POINT_LIST);
 
 	for (unsigned int i = 0; i < _particles.size(); ++i)
 	{
@@ -186,7 +195,7 @@ void FluidVisPlugin::RenderParticlesAsEntities(std::vector<Ogre::Vector3> &_part
 		sceneNode->setVisible(true);
 		entity->setVisible(true);
 
-		double particleSize = 0.15; //0.07
+		double particleSize = 0.03;
 
 		sceneNode->setScale(0.01 * particleSize, 0.01 * particleSize, 0.01 * particleSize);
 

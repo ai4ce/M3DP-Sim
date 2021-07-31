@@ -247,8 +247,6 @@ void GazeboSimulatorBase::createEmitters()
 			emitterBoundary->mapResolution = Eigen::Matrix<unsigned int, 3, 1>(20, 20, 20);
 			emitterBoundary->mapThickness = 0.0;
 			emitter->setEmitStartTime(ed->emitStartTime);
-			//emitter->setEmitEndTime(ed->emitEndTime);
-			//emitter->setEmitEndTime(62);
 
 			/* 			if (ed->type == 0)
 				emitterBoundary->meshFile = FileSystem::normalizePath(getDataPath() + "/models/EmitterBox.obj");

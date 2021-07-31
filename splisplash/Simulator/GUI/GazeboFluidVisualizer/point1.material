@@ -1,0 +1,15 @@
+material _def_Points_01
+{
+	receive_shadows off
+	technique
+	{
+		pass
+		{
+			//point_sprites on
+			//polygon_mode points
+			point_size 40
+			lighting off
+			diffuse vertexcolour
+		}
+	}
+}

@@ -8,7 +8,6 @@
 #include "SPlisHSPlasH/BoundaryModel_Bender2019.h"
 #include "SPlisHSPlasH/Utilities/MathFunctions.h"
 
-
 using namespace SPH;
 using namespace GenParam;
 
@@ -17,11 +16,6 @@ int Viscosity_Weiler2018::MAX_ITERATIONS = -1;
 int Viscosity_Weiler2018::MAX_ERROR = -1;
 int Viscosity_Weiler2018::VISCOSITY_COEFFICIENT_BOUNDARY = -1;
 
-// void Viscosity_Weiler2018::populate_Visc(){
-
-// 	fill(m_viscoCoeffs.begin(),m_viscoCoeffs.end(),4 );
-// }
-
 Viscosity_Weiler2018::Viscosity_Weiler2018(FluidModel *model) :
 	ViscosityBase(model), m_vDiff()
 {
@@ -29,7 +23,9 @@ Viscosity_Weiler2018::Viscosity_Weiler2018(FluidModel *model) :
 	m_maxError = static_cast<Real>(0.01);
 	m_iterations = 0;
 	m_boundaryViscosity = 0.0;
+
 	m_vDiff.resize(model->numParticles(), Vector3r::Zero());
+
 	model->addField({ "velocity difference", FieldType::Vector3, [&](const unsigned int i) -> Real* { return &m_vDiff[i][0]; }, true });
 }
 
@@ -74,7 +70,6 @@ void Viscosity_Weiler2018::matrixVecProd(const Real* vec, Real *result, void *us
 	Simulation *sim = Simulation::getCurrent();
 	Viscosity_Weiler2018 *visco = (Viscosity_Weiler2018*)userData;
 	FluidModel *model = visco->getModel();
-
 	const unsigned int numParticles = model->numActiveParticles();
 	const unsigned int fluidModelIndex = model->getPointSetIndex();
 	const unsigned int nFluids = sim->numberOfFluidModels();
@@ -83,9 +78,7 @@ void Viscosity_Weiler2018::matrixVecProd(const Real* vec, Real *result, void *us
 	const Real h = sim->getSupportRadius();
 	const Real h2 = h*h;
 	const Real dt = TimeManager::getCurrent()->getTimeStepSize();
-	const Real t=TimeManager::getCurrent()->getTime();
 	const Real mu = visco->m_viscosity;
-	const Real muFix = 1000000;
 	const Real mub = visco->m_boundaryViscosity;
 	const Real sphereVolume = static_cast<Real>(4.0 / 3.0 * M_PI) * h2*h;
 	const Real density0 = model->getDensity0();
@@ -95,7 +88,6 @@ void Viscosity_Weiler2018::matrixVecProd(const Real* vec, Real *result, void *us
 		d = 8.0;
 
 	const Scalarf8 d_mu(d * mu);
-	//const Scalarf8 d_mufix(d * muFix);
 	const Scalarf8 d_mub(d * mub);
 	const Scalarf8 h2_001(0.01f*h2);
 	const Scalarf8 density0_avx(density0);
@@ -118,15 +110,7 @@ void Viscosity_Weiler2018::matrixVecProd(const Real* vec, Real *result, void *us
 
 			Vector3f8 delta_ai_avx;
 			delta_ai_avx.setZero();
-			/*Real muVar = mu;
-			if (i > 500) {
-				if (i < numParticles - 500){
-					muVar = muFix;
-				}else {
-					muVar = mu;
-				}
-			}
-			const Scalarf8 d_mu(d * muVar);*/
+
 			//////////////////////////////////////////////////////////////////////////
 			// Fluid
 			//////////////////////////////////////////////////////////////////////////
@@ -136,7 +120,7 @@ void Viscosity_Weiler2018::matrixVecProd(const Real* vec, Real *result, void *us
 				const Vector3f8 gradW = CubicKernel_AVX::gradW(xixj);
 				const Vector3f8 vj_avx = convertVec(&sim->getNeighborList(fluidModelIndex, fluidModelIndex, i)[j], &vec[0], count);
 				const Scalarf8 mj_avx = convert_zero(model->getMass(0), count);			// all particles have the same mass
-				
+
 				delta_ai_avx += gradW * (d_mu * (mj_avx / density_j_avx) * (vi_avx - vj_avx).dot(xixj) / (xixj.squaredNorm() + h2_001));
 			);
 
@@ -300,7 +284,6 @@ void Viscosity_Weiler2018::matrixVecProd(const Real* vec, Real *result, void *us
 	const Real h = sim->getSupportRadius();
 	const Real h2 = h*h;
 	const Real dt = TimeManager::getCurrent()->getTimeStepSize();
-	const Real t=TimeManager::getCurrent()->getTime();
 	const Real mu = visco->m_viscosity;
 	const Real mub = visco->m_boundaryViscosity;
 	const Real sphereVolume = static_cast<Real>(4.0 / 3.0 * M_PI) * h2*h;
@@ -471,8 +454,6 @@ void Viscosity_Weiler2018::matrixVecProd(const Real* vec, Real *result, void *us
 			result[3 * i + 2] = vec[3 * i + 2] - dt / density_i*ai[2];
 		}
 	}
-		// std::cout<<mu<<std::endl;
-
 }
 
 #endif
@@ -498,7 +479,6 @@ void Viscosity_Weiler2018::diagonalMatrixElement(const unsigned int i, Matrix3r 
 	const Real h = sim->getSupportRadius();
 	const Real h2 = h * h;
 	const Real dt = TimeManager::getCurrent()->getTimeStepSize();
-	const Real t=TimeManager::getCurrent()->getTime();
 	const Real mu = visco->m_viscosity;
 	const Real mub = visco->m_boundaryViscosity;
 	const Real sphereVolume = static_cast<Real>(4.0 / 3.0 * M_PI) * h2*h;
@@ -636,10 +616,6 @@ void Viscosity_Weiler2018::diagonalMatrixElement(const unsigned int i, Matrix3r 
 	result += res_avx.reduce();
 
 	result = Matrix3r::Identity() - (dt / density_i) * result;
-		// std::cout<<mu<<std::endl;
-
-
-
 }
 
 #else
@@ -662,7 +638,6 @@ void Viscosity_Weiler2018::diagonalMatrixElement(const unsigned int i, Matrix3r 
 	const Real h = sim->getSupportRadius();
 	const Real h2 = h*h;
 	const Real dt = TimeManager::getCurrent()->getTimeStepSize();
-	const Real t=TimeManager::getCurrent()->getTime();
 	const Real mu = visco->m_viscosity;
 	const Real mub = visco->m_boundaryViscosity;
 	const Real sphereVolume = static_cast<Real>(4.0 / 3.0 * M_PI) * h2*h;
@@ -782,9 +757,6 @@ void Viscosity_Weiler2018::diagonalMatrixElement(const unsigned int i, Matrix3r 
 		}
 	}
 	result = Matrix3r::Identity() - (dt / density_i) * result;
-		// std::cout<<mu<<std::endl;
-
-
 }
 
 #endif
@@ -803,7 +775,6 @@ void Viscosity_Weiler2018::diagonalMatrixElement(const unsigned int i, Vector3r 
 	const Real h = sim->getSupportRadius();
 	const Real h2 = h*h;
 	const Real dt = TimeManager::getCurrent()->getTimeStepSize();
-	const Real t=TimeManager::getCurrent()->getTime();
 	const Real mu = visco->m_viscosity;
 	const Real mub = visco->m_boundaryViscosity;
 	const unsigned int nFluids = sim->numberOfFluidModels();
@@ -934,11 +905,7 @@ void Viscosity_Weiler2018::diagonalMatrixElement(const unsigned int i, Vector3r 
 		}
 	}
 	result = Vector3r::Ones() - (dt / density_i) * result;
-		// std::cout<<mu<<std::endl;
-
-
 }
-
 
 #endif
 

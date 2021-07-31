@@ -113,7 +113,7 @@ void Emitter::emitParticles(std::vector <unsigned int> &reusedParticles, unsigne
 		const Vector3r halfSize = 0.5 * size;
 		const Vector3r pos = x0 + static_cast<Real>(0.5) * animationMarginAhead * emitDir;
 		//const Vector3r pos = x0 + Vector3r(0.0,2.0,0.0);
-		//std::cout << " emmiter update " << std::endl; 
+		std::cout << " emmiter update " << std::endl; 
 
 		const unsigned int nModels = sim->numberOfFluidModels();
 		for (unsigned int m = 0; m < nModels; m++)

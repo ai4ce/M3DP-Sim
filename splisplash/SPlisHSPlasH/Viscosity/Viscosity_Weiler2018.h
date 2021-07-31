@@ -5,7 +5,6 @@
 #include "SPlisHSPlasH/FluidModel.h"
 #include "ViscosityBase.h"
 #include "SPlisHSPlasH/Utilities/MatrixFreeSolver.h"
-#include <vector>
 
 #define USE_BLOCKDIAGONAL_PRECONDITIONER
 
@@ -22,7 +21,6 @@ namespace SPH
 		Real m_maxError;
 		unsigned int m_iterations;
 		std::vector<Vector3r> m_vDiff;
-	
 
 #ifdef USE_BLOCKDIAGONAL_PRECONDITIONER
 		typedef Eigen::ConjugateGradient<MatrixReplacement, Eigen::Lower | Eigen::Upper, BlockJacobiPreconditioner3D> Solver;
@@ -37,7 +35,6 @@ namespace SPH
 		virtual void initParameters();
 		
 	public:
-		static std::vector<Real>m_viscoCoeffs;
 		static int ITERATIONS;
 		static int MAX_ITERATIONS;
 		static int MAX_ERROR;

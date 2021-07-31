@@ -13,7 +13,6 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
   "LIBBULLET_VERSION=2.87"
   "LIBBULLET_VERSION_GT_282"
   "SPH_DATA_PATH=\"../data\""
-  "USE_AVX"
   )
 
 # The include file search paths:

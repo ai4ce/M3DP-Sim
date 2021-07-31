@@ -94,7 +94,6 @@ private:
   // sdf pointers
   physics::WorldPtr world;
   //physics::ModelPtr model2;
-  physics::ModelPtr modelbox;
   sdf::ElementPtr fluidPluginSdf;
 
   /// \brief Publisher for fluid object visual messages.

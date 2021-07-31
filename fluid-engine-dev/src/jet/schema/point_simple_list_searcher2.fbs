@@ -1,9 +1,0 @@
-include "basic_types.fbs";
-
-namespace jet.fbs;
-
-table PointSimpleListSearcher2 {
-    points:[Vector2D];
-}
-
-root_type PointSimpleListSearcher2;

@@ -17,7 +17,6 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
   "LIBBULLET_VERSION_GT_282"
   "TW_NO_LIB_PRAGMA"
   "TW_STATIC"
-  "USE_AVX"
   )
 
 # The include file search paths:

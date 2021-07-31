@@ -1,4 +1,3 @@
-
 #include "SPlisHSPlasH/Common.h"
 #include "SPlisHSPlasH/TimeManager.h"
 #include <Eigen/Dense>
@@ -21,6 +20,7 @@
 #include "SPlisHSPlasH/EmitterSystem.h"
 #include <functional>
 #include <gazebo/common/common.hh>
+#include <chrono>
 
 // Enable memory leak detection
 #ifdef _DEBUG
@@ -45,11 +45,10 @@ FluidSimulator::FluidSimulator()
 	std::cout << "Plugin loaded" << std::endl;
 }
 
-std::vector<float> timelist;
 
 void FluidSimulator::RunStep()
 {
-	auto start = std::chrono::high_resolution_clock::now();
+        auto start = std::chrono::high_resolution_clock::now();
 	simulationSteps++;
 	Simulation *sim = Simulation::getCurrent();
 	if (sim->getBoundaryHandlingMethod() == BoundaryHandlingMethods::Akinci2012)
@@ -69,23 +68,47 @@ void FluidSimulator::RunStep()
 	TimeManager *get= TimeManager::getCurrent();
 	Real t = get->getTime();
 	double xi,yj,zk;
-	physics::ModelPtr model2 = this->world->ModelByName("modelName");
+	physics::ModelPtr model2 = this->world->ModelByName("robot");
+	//physics::ModelPtr model2 = this->world->ModelByName("turtlebot3_burger");
+	physics::LinkPtr targetLink = model2->GetLink("gripper_link");
+	//physics::LinkPtr targetLink = model2->GetLink("wrist_3_link");
+	//physics::ModelPtr model2 = this->world->ModelByName("modelName");
 	ignition::math::Pose3d pose;     
-	pose = model2->WorldPose();
+	//pose = model2->WorldPose();
+	pose = targetLink->WorldPose();
 	ignition::math::Vector3<double> position = pose.Pos();
 	xi = position.X(); // x coordinate
 	yj = position.Y(); // y coordinate
 	zk = position.Z(); // z coordinate	
-	
-	this->modelbox->SetLinearVel(ignition::math::Vector3d(2*sin(4*t),2*cos(4*t),0.0175));//0.0175,0.04
-	//this->modelbox->SetLinearVel(ignition::math::Vector3d(sin(4*t)-2*cos(2*t),cos(4*t)-3*cos(2*t)-1,0.015)); //0.0125
-	
+	//std::cout << ' ' << xi << ' ' << yj <<  ' ' << zk << std::endl;
 
 	FluidModel *model = sim->getFluidModel(0);
 	Emitter *emitter = model->getEmitterSystem()->getEmitters().back();
-	emitter->move_emitter(Vector3r(xi,yj,zk));
+	//emitter->move_emitter(Vector3r(xi,yj,zk-0.01));
+	emitter->move_emitter(Vector3r(xi,yj,zk-0.01));
 
-	if (simulationSteps % 100 == 0) //5
+	//this->model = physics::ModelPtr parent;
+
+	//this->model2->SetLinearVel(ignition::math::Vector3d(.3, 0, 0));
+
+	//get particles position
+	/*if (simulationSteps % 2000 == 0) {
+		std::ofstream file("frame_" + std::to_string(simulationSteps) + ".xyz");
+		if (file) {
+			for (unsigned int i = 0; i < model->numActiveParticles(); i++){
+				Vector3r &particlepos = model->getPosition(i);
+				//file << particlepos;
+				file << particlepos[0] << " " << particlepos[1] << " " << particlepos[2]<< "\n" ;
+			}
+			file.close();
+		}
+	}*/
+
+	/*for (unsigned int i = 0; i < model->numActiveParticles(); ++i) {
+		model->setParticleState(i, ParticleState::AnimatedByEmitter);
+	}*/
+
+	if (simulationSteps % 5 == 0)
 	{
 		msgs::Fluid fluid_positions_msg;
 		fluid_positions_msg.set_name("fluid_positions");
@@ -116,12 +139,9 @@ void FluidSimulator::RunStep()
 			gazebo::msgs::Set(boundary_particles_msg.add_position(), boundary_particles);
 		}
 	}
+	this->rigidObjPub->Publish(boundary_particles_msg);
 
-	/*for (unsigned int i = 0; i < model->numActiveParticles(); ++i) {
-		model->setParticleState(i, ParticleState::AnimatedByEmitter);
-	}*/
-	
-if (simulationSteps % 2000 == 0) {
+/*if (simulationSteps % 1000 == 0) {
      	const string fileName = "0frame_" + std::to_string(simulationSteps) + ".xyz";
 	 	const string path="/home/jason/fluid-engine-dev/build/bin/hybrid_liquid_sim_output/SPlisHSPlasH_out/"+fileName;   //determine where you are saving the files in
 
@@ -142,11 +162,11 @@ if (simulationSteps % 2000 == 0) {
 	 		}
 	 	}
 
- 	string command="'/home/jason/fluid-engine-dev/build/bin/particles2obj' -i '"+path+"' -r 250,400,200 -k 0.04 -m spherical -o '/home/jason/fluid-engine-dev/build/bin/hybrid_liquid_sim_output/louis_test_"+std::to_string(simulationSteps)+".obj'";
+ 	string command="'/home/jason/fluid-engine-dev/build/bin/particles2obj' -i '"+path+"' -r 200,200,100 -k 0.05 -m spherical -o '/home/jason/fluid-engine-dev/build/bin/hybrid_liquid_sim_output/louis_test_"+std::to_string(simulationSteps)+".obj'";
 
 	 	outFile.close();
 	 	system((command).c_str());
-
+*/
 		/*#pragma region keep two models
 		RemoveModel(name2);
 		name2 = name1;
@@ -155,7 +175,7 @@ if (simulationSteps % 2000 == 0) {
 		#pragma endregion
 		*/
 		
-		#pragma region keep one model
+/*		#pragma region keep one model
 		RemoveModel(name1);
 		name1 = to_string(simulationSteps);
 		ImportModel(name1,1);
@@ -164,58 +184,40 @@ if (simulationSteps % 2000 == 0) {
 
 	 }
 
-	auto finish = std::chrono::high_resolution_clock::now();
-	auto duration = std::chrono::duration_cast<std::chrono::milliseconds>(finish - start);
-	timelist.push_back(duration.count());
+    auto finish = std::chrono::high_resolution_clock::now();
+	auto duration = std::chrono::duration_cast<std::chrono::milliseconds>(finish - start); 
 	if (simulationSteps % 100 == 0) {
-	    float avg;
-		float sum = 0;
-		for (int k = 0; k < timelist.size(); ++k) {
-			sum += timelist[k];
-		}
-		avg = sum / timelist.size();
-		timelist.clear();
-
 		std::ofstream outfile;
 		outfile.open("/home/jason/splisplash/timeDuration.txt", std::ios::out | std::ios::app);
-		outfile << avg << "," << model->numActiveParticles() << "," << simulationSteps << std::endl;
+		outfile << duration.count() << std::endl;
 	}
-
-
-}
-
-FluidSimulator::~FluidSimulator()
-{
-	this->connections.clear();
-	base->cleanup();
-	Utilities::Timing::printAverageTimes();
-	Utilities::Timing::printTimeSums();
-
-	Utilities::Counting::printAverageCounts();
-	Utilities::Counting::printCounterSums();
-
-	delete Simulation::getCurrent();
+ */       
 }
 
 void FluidSimulator::ImportModel(string name, float size)
 {
 
 	double xi,yj,zk;
-	physics::ModelPtr model2 = this->world->ModelByName("modelName");
+	physics::ModelPtr model2 = this->world->ModelByName("robot");
+
+	physics::LinkPtr targetLink = model2->GetLink("gripper_link");
+
 	ignition::math::Pose3d pose;     
-	pose = model2->WorldPose();
+
 	ignition::math::Vector3<double> position = pose.Pos();
+    
+	pose = targetLink->WorldPose();
 
 	xi = position.X(); // x coordinate
 	yj = position.Y(); // y coordinate
 	zk = position.Z(); // z coordinate	
-	//string x=to_string(xi);
-	//string y=to_string(yj);
-	//string z=to_string(zk);
+	string x=to_string(xi);
+	string y=to_string(yj);
+	string z=to_string(zk);
 
-	 string x="0";
-	 string y="0";
-	 string z="0";
+	// string x="0";
+	// string y="0";
+	// string z="0";
 	string yaw="0";
 	string roll="0";
 	string pitch = "0";
@@ -258,6 +260,18 @@ void FluidSimulator::RemoveModel(string name)
 	system(command.c_str());
 }
 
+FluidSimulator::~FluidSimulator()
+{
+	this->connections.clear();
+	base->cleanup();
+	Utilities::Timing::printAverageTimes();
+	Utilities::Timing::printTimeSums();
+
+	Utilities::Counting::printAverageCounts();
+	Utilities::Counting::printCounterSums();
+
+	delete Simulation::getCurrent();
+}
 
 void FluidSimulator::Init()
 {
@@ -287,20 +301,17 @@ void FluidSimulator::Init()
 	}
 	base->readParameters();
 	initBoundaryData();
-
-	std::ofstream outfile;
-	outfile.open("/home/jason/splisplash/timeDuration.txt", std::ofstream::out | std::ofstream::trunc);
-	outfile.close();
-
 }
 
 void FluidSimulator::Load(physics::ModelPtr parent, sdf::ElementPtr sdf)
 {
 	this->world = parent->GetWorld();
-	this->modelbox = world->ModelByName("modelName");
+	//this->model2 = world->ModelByName("modelName");
 	this->fluidPluginSdf = sdf;
 	this->connections.push_back(event::Events::ConnectWorldUpdateEnd(
 		boost::bind(&FluidSimulator::RunStep, this)));
+
+
 }
 
 void FluidSimulator::RegisterMesh(physics::CollisionPtr collision, std::string extension, std::string path)
@@ -318,16 +329,76 @@ void FluidSimulator::RegisterMesh(physics::CollisionPtr collision, std::string e
 
 void FluidSimulator::ParseSDF()
 {
+
+	//only prase ground
+	physics::ModelPtr models = this->world->ModelByName("ground_plane");
+
+	/*physics::ModelPtr modelR = this->world->ModelByName("robot");
+	physics::LinkPtr targetLinkR = modelR->GetLink("gripper_link");
+	//physics::LinkPtr targetLinkR = modelR->GetLink("base_footprint");
+	//physics::LinkPtr targetLinkR = modelR->GetLink("wheel_right_link");
+	physics::Collision_V collisionsK = targetLinkR->GetCollisions();
+
+	for (physics::Collision_V::iterator collision_itk = collisionsK.begin(); collision_itk != collisionsK.end(); ++collision_itk)
+	{
+		std::cout << "\t\t Collision: " << (*collision_itk)->GetName() << std::endl;		
+		const std::string filepathp = "/home/jason/catkin_ws/src/turtlebot3_manipulation/turtlebot3_manipulation_description/meshes/chain_link_grip_l.stl";
+		//const std::string filepathp = "/home/jason/catkin_ws/src/turtlebot3/turtlebot3_description/meshes/wheels/right_tire.stl";
+		const gazebo::common::Mesh *meshp = common::MeshManager::Instance()->GetMesh(filepathp);
+		//std::string fullMeshPath = "/home/jason/gripper.obj";
+		std::string fullMeshPathp = objFilePath + (*collision_itk)->GetModel()->GetName() + "_" + (*collision_itk)->GetName() + ".obj";
+		// Export the mesh to a temp file in the selected format
+		common::MeshManager::Instance()->Export(meshp, FileSystem::normalizePath(fullMeshPathp), "obj");
+		base->processBoundary(*collision_itk, fullMeshPathp);
+		// Map the mesh filename to the collision shape
+		filenamesToCollisions.insert(std::pair<std::string, physics::CollisionPtr>(fullMeshPathp, (*collision_itk)));
+	}*/
+
+	//boost::dynamic_pointer_cast<const urdf::Mesh>(targetLinkR->collisions->geometry)->filename
+
+	/*for (physics::Collision_V::iterator collision_it = collisions.begin(); collision_it != collisions.end(); ++collision_it)
+	{
+		std::cout << "\t\t Collision: " << (*collision_it)->GetName() << std::endl;
+
+		physics::CollisionPtr coll_ptr = boost::static_pointer_cast<physics::Collision>(*collision_it);
+
+		// check the geometry type of the given collision
+		//sdf::ElementPtr geometry_elem = coll_ptr->GetSDF()->GetElement("geometry");
+
+		// get the name of the geometry
+		//std::string geometry_type = geometry_elem->GetFirstElement()->GetName();
+		
+		if (geometry_type == "mesh")
+				{
+					// get the uri element value
+					const std::string uri = geometry_elem->GetElement(geometry_type)->GetElement("uri")->Get<std::string>();
+
+					// get the filepath from the uri
+					const std::string filepath = common::SystemPaths::Instance()->FindFileURI(uri);
+					const gazebo::common::Mesh *mesh = common::MeshManager::Instance()->GetMesh(filepath);
+
+					std::string fullMeshPath = objFilePath + (*collision_it)->GetModel()->GetName() + "_" + (*collision_it)->GetName() + ".obj";
+					// Export the mesh to a temp file in the selected format
+					common::MeshManager::Instance()->Export(mesh, FileSystem::normalizePath(fullMeshPath), "obj");
+					base->processBoundary(*collision_it, fullMeshPath);
+					// Map the mesh filename to the collision shape
+					filenamesToCollisions.insert(std::pair<std::string, physics::CollisionPtr>(fullMeshPath, (*collision_it)));
+				}
+	}*/
+
 	// get all models from the world
-	physics::Model_V models = world->Models();
+	//physics::Model_V models = world->Models();
 
 	// iterate through all models
-	for (physics::Model_V::iterator currentModel = models.begin(); currentModel != models.end(); ++currentModel)
-	{
-		// get all links from the model
-		physics::Link_V model_links = currentModel->get()->GetLinks();
+	//for (physics::Model_V::iterator currentModel = models.begin(); currentModel != models.end(); ++currentModel)
+	//{
 
-		std::cout << "Model: " << currentModel->get()->GetName() << std::endl;
+		// get all links from the model
+		//physics::Link_V model_links = currentModel->get()->GetLinks();
+		physics::Link_V model_links = models->GetLinks();
+
+		//std::cout << "Model: " << currentModel->get()->GetName() << std::endl;
+		std::cout << "Model: " << models->GetName() << std::endl;
 
 		// iterate through all the links
 		for (physics::Link_V::iterator link_it = model_links.begin(); link_it != model_links.end(); ++link_it)
@@ -363,7 +434,7 @@ void FluidSimulator::ParseSDF()
 					RegisterMesh(*collision_it, "obj", objFilePath);
 				}
 
-				/*else if (geometry_type == "cylinder")
+				else if (geometry_type == "cylinder")
 				{
 					// Cylinder dimensions
 					double radius = geometry_elem->GetElement(geometry_type)->GetElement("radius")->Get<double>();
@@ -374,7 +445,7 @@ void FluidSimulator::ParseSDF()
 
 					//Generate an obj file in the temporary directory containing the mesh of the cylinder
 					RegisterMesh(*collision_it, "obj", objFilePath);
-				}*/
+				}
 
 				else if (geometry_type == "sphere")
 				{
@@ -397,16 +468,18 @@ void FluidSimulator::ParseSDF()
 					if ((*collision_it)->GetName() == "collision_ground_plane")
 					{
 						normal = ignition::math::Vector3d(0, 0, 1); // = geom_elem->GetElement(geom_type)->GetElement("normal")->Get<ignition::math::Vector3d>();
-						size = ignition::math::Vector2d(8.0, 8.0);  //2,2 //= geom_elem->GetElement(geom_type)->GetElement("size")->Get<ignition::math::Vector2d>();
+						size = ignition::math::Vector2d(4.0, 4.0);  //= geom_elem->GetElement(geom_type)->GetElement("size")->Get<ignition::math::Vector2d>();
 					}
 					else
 					{
-						normal = geometry_elem->GetElement(geometry_type)->GetElement("normal")->Get<ignition::math::Vector3d>();
-						size = geometry_elem->GetElement(geometry_type)->GetElement("size")->Get<ignition::math::Vector2d>();
+						//normal = geometry_elem->GetElement(geometry_type)->GetElement("normal")->Get<ignition::math::Vector3d>();
+						//size = geometry_elem->GetElement(geometry_type)->GetElement("size")->Get<ignition::math::Vector2d>();
+						normal = ignition::math::Vector3d(0, 0, 1);
+						size = ignition::math::Vector2d(4.0, 4.0);
 					}
 
 					// Generate the plane mesh
-					common::MeshManager::Instance()->CreatePlane((*collision_it)->GetName(), ignition::math::Vector3d(0.0, 0.0, 1.0), 0.0, size, ignition::math::Vector2d(8.0, 8.0), ignition::math::Vector2d()); //4,4
+					common::MeshManager::Instance()->CreatePlane((*collision_it)->GetName(), ignition::math::Vector3d(0.0, 0.0, 1.0), 0.0, size, ignition::math::Vector2d(4.0, 4.0), ignition::math::Vector2d());
 
 					//Generate an obj file in the temporary directory containing the mesh of the plane
 					RegisterMesh(*collision_it, "obj", objFilePath);
@@ -435,7 +508,7 @@ void FluidSimulator::ParseSDF()
 				}
 			}
 		}
-	}
+	//} 
 }
 
 void FluidSimulator::reset()
@@ -564,7 +637,3 @@ void FluidSimulator::initBoundaryData()
 }
 
 GZ_REGISTER_MODEL_PLUGIN(FluidSimulator)
-
-
-
-	

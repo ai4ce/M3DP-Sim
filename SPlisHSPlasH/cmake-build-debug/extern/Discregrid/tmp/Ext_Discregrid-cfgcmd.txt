@@ -1,1 +1,0 @@
-cmd='/opt/clion-2020.2.4/bin/cmake/linux/bin/cmake;-DCMAKE_POSITION_INDEPENDENT_CODE:BOOL=ON;-DCMAKE_BUILD_TYPE:STRING=Debug;-DCMAKE_INSTALL_PREFIX:PATH=/home/jason/splisplash/cmake-build-debug/extern/install/Discregrid;-DBUILD_CMD_EXECUTABLE:BOOL=0;-DEIGEN3_INCLUDE_DIR:PATH=/usr/include/eigen3;-GCodeBlocks - Unix Makefiles;<SOURCE_DIR><SOURCE_SUBDIR>'

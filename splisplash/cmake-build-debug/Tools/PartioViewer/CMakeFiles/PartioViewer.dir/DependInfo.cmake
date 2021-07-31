@@ -22,7 +22,6 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
   "SPH_DATA_PATH=\"../data\""
   "TW_NO_LIB_PRAGMA"
   "TW_STATIC"
-  "USE_AVX"
   )
 
 # The include file search paths:
