@@ -84,9 +84,9 @@ sudo apt install build-essentials
     
 2. **Clone our repo**
   ```
-  Lorem 
+  https://github.com/ai4ce/M3DP-Sim.git 
   ```
- Ipsum
+ 
   
   ## Fluid Engine Dev for meshing simulations
   
